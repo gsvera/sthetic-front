@@ -1,14 +1,110 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+   /**
+   * Color primario, botones, acentos
+   */
+    --primary: #C2185B;
+    /**
+     * Fondo principal o secciones
+     */
+    --secondary: #F3E8FF;
+    /**
+     * Íconos, detalles premium
+     */
+    --accent: #D4AF37;
+    /**
+     * Aporta contraste sin ser negro, ideal para íconos o textos destacados
+     */
+    --accentReverse: #593D63;
+    /**
+     * Backgrounds, tarjetas
+     */
+    --backgroundLight: #F5F5F5;
+    /**
+     * Background oscuro
+     */
+    --backgroundStrong: #2B2B2B;
+    /**
+     * 	Texto principal
+     */
+    --text: #2E2E2E;
+    /**
+     * Texto invertido
+     */
+    --textLight: #FFFFFF;
+    /**
+     * Texto color oro para fondos oscuros y claros
+     */
+    --textOre: #D4AF37;
+    /**
+     * Texto para labels con fondo claro
+     */
+    --textLabels: #964F4C;
+    /**
+     *  Texto para marcar errores
+     */
+    --textError: #A4161A;
+    /**
+     * Azul acero para titulos con fondos claros
+     */
+    --textTitle: #3E5C76;
+    /**
+     * 	Texto secundario / descripciones
+     */
+    --muted: #8D8D8D;
+    /**
+     * Para elementos deshabilitados
+     */
+    --disabled: #CFCFCF;
+    /**
+     * para elementos | botones que realicen acciones de actualizar
+     */
+    --update: #4A3F35;
+    /**
+     * Para elemento | botones que realicen accion de guardar
+     */
+    --save: #D4AF37;
+    /**
+     * para elemento | botones que realicen accion de borrar
+     */
+    --delete: #964F4C;
+    /**
+     * para elementos | botones que realicen acciones pero no de tipo crud
+     */
+    --action: #3C3C3C;
+    /**
+     * para elementos | boton que realicen cancelacion de una accion
+     */
+    --cancel: #5e5e5e;
+    /**
+     * para notificaciones exitosas
+     */
+    --successNotification: #3B7A57;
+    /**
+     * para notificaciones de actualizacion
+     */
+    --updateNotification: #2C3E50;
+    /**
+     * para notificaciones de error
+     */
+    --errorNotification: #B04A4A;
+    /**
+     * colores de error o advertencia de peligro o de acciones que son de riesgo
+     */
+    --dangerColor: #ff4d4d;
+    /**
+     * Shadow background para modales
+     */
+    --shadowBackground: rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {
@@ -35,8 +131,16 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+} */
+
+.title {
+  color:var(--accent);
+  text-align: center;
+}
+.text-center{ 
+  text-align: center;
 }

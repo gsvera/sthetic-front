@@ -32,7 +32,6 @@
   gap: 32px;
   grid-row-start: 2;
 }
-
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;
@@ -159,8 +158,29 @@ a.secondary {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
   }
+} */
+
+.logo{
+  text-align: center;
+}
+
+.widthall{
+  width: 100%;
+}
+.dflex {
+  display: flex;
+}
+.verticalcenter {
+  align-items: center;
+}
+.dcenter {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  color: var(--accent);
 }
