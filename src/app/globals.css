@@ -371,3 +371,13 @@ line-height: 1.5;
   text-align: justify;
   line-height: 1.5;
 }
+.container-body-delete{
+  width: 70%;
+  margin: 100px auto;
+}
+.title-delete-account{
+  margin-bottom: 30px;
+}
+.content-text-delete-account{
+  margin: 20px 0;
+}
