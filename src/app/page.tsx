@@ -1,13 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import MenuPage from "@/components/MenuPage";
+
 import { FaCheckCircle, FaCheck } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <MenuPage />
       <main className={styles.main}>
         <div className="banner-home-div"></div>
         <div className="container-body">
@@ -316,6 +315,70 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container-body content-width-7">
+          <h2 className="text-center subtitle">
+            ¿Por qué elegir Meredith Aesthetic?
+          </h2>
+          <div className="container-body">
+            <div className="d-flex content-center mt-5">
+              <div>
+                <FaCheck className="check-option" />
+              </div>
+              <div>
+                <p className="text-selection">
+                  Amplia red de profesionales de la estética y la belleza.
+                </p>
+              </div>
+            </div>
+
+            <div className="d-flex content-center mt-5">
+              <div>
+                <FaCheck className="check-option" />
+              </div>
+              <div>
+                <p className="text-selection">
+                  Comparte y recibe reseñas reales para elegir con confianza.
+                </p>
+              </div>
+            </div>
+
+            <div className="d-flex content-center mt-5">
+              <div>
+                <FaCheck className="check-option" />
+              </div>
+              <div>
+                <p className="text-selection">
+                  Agenda y organiza tus servicios desde un solo lugar.
+                </p>
+              </div>
+            </div>
+
+            <div className="d-flex content-center mt-5">
+              <div>
+                <FaCheck className="check-option" />
+              </div>
+              <div>
+                <p className="text-selection">
+                  Una comunidad enfocada en resaltar la belleza y el bienestar
+                  personal.
+                </p>
+              </div>
+            </div>
+
+            <div className="d-flex content-center mt-5">
+              <div>
+                <FaCheck className="check-option" />
+              </div>
+              <div>
+                <p className="text-selection">
+                  Ya sea que quieras encontrar al mejor especialista cerca de ti
+                  o registrarte como profesional de la estética, en Meredith
+                  Aesthetic lo tienes todo en un solo lugar.
+                </p>
               </div>
             </div>
           </div>
