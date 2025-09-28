@@ -5,22 +5,22 @@ export default function Privacy() {
         <p className="title-privacy">POLÍTICA DE PRIVACIDAD</p>
       </div>
       <p className="text-date">
-        Fecha de última actualización: 30 de junio de 2025
+        Fecha de última actualización: 27 de Septiembre 2025
       </p>
       <p className="text-privacy">
-        En MeCare, la privacidad de nuestros usuarios es una prioridad. Esta
-        Política de Privacidad describe cómo recolectamos, usamos, almacenamos y
-        protegemos tus datos personales, conforme a lo establecido en la Ley
-        Federal de Protección de Datos Personales en Posesión de los
-        Particulares (LFPDPPP).
+        En Meredith Aesthetic, la privacidad de nuestros usuarios es una
+        prioridad. Esta Política de Privacidad describe cómo recolectamos,
+        usamos, almacenamos y protegemos tus datos personales, conforme a lo
+        establecido en la Ley Federal de Protección de Datos Personales en
+        Posesión de los Particulares (LFPDPPP).
       </p>
       <div>
         <p className="subtitle-privacy">
           1. Responsable del tratamiento de datos
         </p>
         <p className="text-privacy">
-          Meredith es responsable del uso y protección de tus datos personales.
-          Puedes contactarnos en: mecare@gmail.com
+          Meredith Aesthetic es responsable del uso y protección de tus datos
+          personales. Puedes contactarnos en: meredith.abasotech@gmail.com
         </p>
       </div>
       <div>
@@ -93,7 +93,7 @@ export default function Privacy() {
         <p className="text-privacy">
           Tienes derecho a acceder, rectificar, cancelar u oponerte al uso de
           tus datos personales (derechos ARCO). Para ejercerlos, envía una
-          solicitud a: mecare@gmail.com
+          solicitud a: meredith.abasotech@gmail.com
         </p>
       </div>
       <div>
@@ -137,9 +137,9 @@ export default function Privacy() {
         <p className="text-privacy">
           Los pagos son procesados mediante plataformas externas como{" "}
           <span className="font-bold">Stripe</span>.{" "}
-          <span className="font-bold">MeCare</span> no almacena información de
-          tarjetas de crédito, cuentas bancarias ni otros datos financieros
-          sensibles.
+          <span className="font-bold">Meredith Aesthetic</span> no almacena
+          información de tarjetas de crédito, cuentas bancarias ni otros datos
+          financieros sensibles.
         </p>
         <p className="text-privacy">
           Te sugerimos revisar las políticas de privacidad de dichos servicios
@@ -160,21 +160,22 @@ export default function Privacy() {
       </div>
       <div>
         <p className="text-date">
-          Fecha de última actualización: 30 de junio de 2025
+          Fecha de última actualización: 27 de Septiembre de 2025
         </p>
       </div>
       <div>
         <p className="subtitle-privacy">1. Aceptación</p>
         <p className="text-privacy">
-          Al utilizar MeCare, aceptas estos términos y condiciones. Si no estás
-          de acuerdo, no uses la aplicación.
+          Al utilizar Meredith Aesthetic, aceptas estos términos y condiciones.
+          Si no estás de acuerdo, no uses la aplicación.
         </p>
       </div>
       <div>
         <p className="subtitle-privacy">2. Uso de la app</p>
         <p className="text-privacy">
           La app sirve como plataforma de contacto entre profesionales y
-          clientes. MeCare <span className="font-bold">no garantiza:</span>
+          clientes. Meredith Aesthetic{" "}
+          <span className="font-bold">no garantiza:</span>
         </p>
         <ul className="list-privacy">
           <li className="text-list-privacy">
@@ -204,14 +205,16 @@ export default function Privacy() {
       <div>
         <p className="subtitle-privacy">4. Propiedad intelectual</p>
         <p className="text-privacy">
-          Todos los contenidos, marcas, logos y software de MeCare son propiedad
-          de sus respectivos dueños. Está prohibido copiar, distribuir o
-          modificar sin autorización expresa.
+          Todos los contenidos, marcas, logos y software de Meredith Aesthetic
+          son propiedad de sus respectivos dueños. Está prohibido copiar,
+          distribuir o modificar sin autorización expresa.
         </p>
       </div>
       <div>
         <p className="subtitle-privacy">5. Limitación de responsabilidad</p>
-        <p className="text-privacy">MeCare no se hace responsable por:</p>
+        <p className="text-privacy">
+          Meredith Aesthetic no se hace responsable por:
+        </p>
         <ul className="list-privacy">
           <li className="text-list-privacy">
             Acuerdos o conflictos entre usuarios
@@ -232,7 +235,7 @@ export default function Privacy() {
           servicios de terceros como <span className="font-bold">Stripe</span>.
         </p>
         <p className="text-privacy">
-          MeCare{" "}
+          Meredith Aesthetic{" "}
           <span className="font-bold">
             no almacena ni procesa directamente información bancaria o de
             tarjetas.
