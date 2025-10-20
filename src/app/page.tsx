@@ -1,29 +1,44 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-
 import { FaCheckCircle, FaCheck } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import BannerHeader from "@/components/BannerHeader";
+import ButtonApp from "@/components/ButtonApp";
+import AnimatedImage from "@/components/Image/AnimatedImage";
+import AnimatedIcon from "@/components/Image/AnimatedIcon";
 
 export default function Home() {
+  const buttonApps = (
+    <div className="content-btn-app">
+      <ButtonApp textBtn="App para cliente" href="" />
+      <ButtonApp textBtn="App para dar servicio" href="" />
+    </div>
+  );
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <div className="banner-home-div"></div>
+        <BannerHeader
+          slogan="La app dedicado a profesionales de la belleza y cuidado personal"
+          child={buttonApps}
+        />
+
         <div className="container-body">
-          <h1 className="title mb-3">Bienvenido a Meredith Aesthetic</h1>
+          <p className="title mb-3">Bienvenido a Meredith Aesthetic</p>
           <p className="text-center line-height-m t-secondary text-size-m">
-            El sitio web donde puedes encontrar y ofrecer servicios de estética,
+            El software donde puedes encontrar y ofrecer servicios de estética,
             belleza y <br /> cuidado personal de forma rápida, segura y
             profesional.
           </p>
         </div>
         <div className="container-body d-flex">
-          <div className="col-5 content-center">
-            <img src="/about-left.webp" alt="Acerca de nosotros" />
-          </div>
+          <AnimatedImage
+            src="/about-left.webp"
+            alt="Acerca de nosotros"
+            styles=""
+          />
           <div className="col-5 p-7 div-center-xy">
             <div className="">
-              <h2 className="mb-3">Quienes somos?</h2>
+              <h2 className="mb-3 t-outfit">¿Quiénes somos?</h2>
               <p className="text-subtitle mb-3">Calidad de estilo y belleza</p>
               <p className="text-paragraph line-height-m t-secondary ">
                 Nuestra plataforma conecta a clientes que buscan especialistas
@@ -38,8 +53,8 @@ export default function Home() {
                   <FaCheckCircle className="check-list" /> Reserva tu cita
                 </li>
                 <li>
-                  <FaCheckCircle className="check-list" /> Ver la calificación
-                  del worker
+                  <FaCheckCircle className="check-list" /> Visualiza su trabajo
+                  y recomendaciones
                 </li>
               </ul>
             </div>
@@ -50,101 +65,124 @@ export default function Home() {
             <h2 className="text-center subtitle">
               ¿Qué puedes hacer en Meredith Aesthetic?
             </h2>
-            <div className="container-body d-flex">
-              <div className="col-5 p-benefits">
-                <h3 className="h3-subtitle mb-3">✨ Si eres cliente:</h3>
-                <div className="d-flex mt-5">
-                  <div>
-                    <FaCheck className="check-option" />
-                  </div>
-                  <div>
-                    <p className="text-paragraph line-height-m">
-                      Encuentra salones de belleza, barberías, lashistas,
-                      podólogos y especialistas en estética cerca de ti.
-                    </p>
-                  </div>
+            <div className="container-body">
+              <div className="content-benefits">
+                <div className="col-benefits">
+                  <AnimatedImage
+                    src="/cliente-salon-de-belleza.jpg"
+                    alt="Cliente de meredith aesthetic"
+                    styles="img-benefits"
+                  />
                 </div>
-                <div className="d-flex mt-5">
+                <div className="col-benefits content-text-benefits">
                   <div>
-                    <FaCheck className="check-option" />
-                  </div>
-                  <div>
-                    <p className="text-paragraph line-height-m">
-                      Explora servicios como manicure, pedicure, faciales,
-                      masajes, depilación láser, tratamientos corporales,
-                      maquillaje profesional y mucho más.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex mt-5">
-                  <div>
-                    <FaCheck className="check-option" />
-                  </div>
-                  <div>
-                    <p className="text-paragraph line-height-m">
-                      Filtra por ubicación, especialidad, precio y reseñas de
-                      otros usuarios.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex mt-5">
-                  <div>
-                    <FaCheck className="check-option" />
-                  </div>
-                  <div>
-                    <p className="text-paragraph line-height-m">
-                      Reserva fácilmente tu cita en línea y mejora tu
-                      experiencia de belleza y bienestar.
-                    </p>
+                    <h3 className="subtitle-benefits mb-3">Si eres cliente</h3>
+                    <div className="d-flex mt-5">
+                      <div>
+                        <FaCheck className="check-option" />
+                      </div>
+                      <div>
+                        <p className="text-benefits">
+                          Encuentra salones de belleza, barberías, lashistas,
+                          podólogos y especialistas en estética cerca de ti.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="d-flex mt-5">
+                      <div>
+                        <FaCheck className="check-option" />
+                      </div>
+                      <div>
+                        <p className="text-benefits">
+                          Explora servicios como manicure, pedicure, faciales,
+                          masajes, depilación láser, tratamientos corporales,
+                          maquillaje profesional y mucho más.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="d-flex mt-5">
+                      <div>
+                        <FaCheck className="check-option" />
+                      </div>
+                      <div>
+                        <p className="text-benefits">
+                          Filtra por ubicación, especialidad, precio y reseñas
+                          de otros usuarios.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="d-flex mt-5">
+                      <div>
+                        <FaCheck className="check-option" />
+                      </div>
+                      <div>
+                        <p className="text-benefits">
+                          Reserva fácilmente tu cita en línea y mejora tu
+                          experiencia de belleza y bienestar.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-5 p-benefits">
-                <h3 className="h3-subtitle mb-3">
-                  💼 Si eres profesional de la belleza:
-                </h3>
-                <div className="d-flex mt-5">
+              <div className="content-benefits">
+                <div className="col-benefits content-text-benefits">
                   <div>
-                    <FaCheck className="check-option" />
-                  </div>
-                  <div>
-                    <p className="text-paragraph line-height-m">
-                      Crea tu perfil y promociona tus servicios de estética,
-                      peluquería, barbería o terapias de bienestar, entre otros.
-                    </p>
+                    <h3 className="subtitle-benefits mb-3">
+                      Si eres profesional de la belleza:
+                    </h3>
+                    <div className="d-flex mt-5">
+                      <div>
+                        <FaCheck className="check-option" />
+                      </div>
+                      <div>
+                        <p className="text-benefits">
+                          Crea tu perfil y promociona tus servicios de estética,
+                          peluquería, barbería o terapias de bienestar, entre
+                          otros.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="d-flex mt-5">
+                      <div>
+                        <FaCheck className="check-option" />
+                      </div>
+                      <div>
+                        <p className="text-benefits">
+                          Muestra fotos de tu trabajo, lista tus precios y
+                          recibe reseñas de clientes satisfechos.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="d-flex mt-5">
+                      <div>
+                        <FaCheck className="check-option" />
+                      </div>
+                      <div>
+                        <p className="text-benefits">
+                          Consigue mayor visibilidad y nuevos clientes sin
+                          invertir en publicidad costosa.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="d-flex mt-5">
+                      <div>
+                        <FaCheck className="check-option" />
+                      </div>
+                      <div>
+                        <p className="text-benefits">
+                          Administra tus citas y mantén el control de tu agenda.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="d-flex mt-5">
-                  <div>
-                    <FaCheck className="check-option" />
-                  </div>
-                  <div>
-                    <p className="text-paragraph line-height-m">
-                      Muestra fotos de tu trabajo, lista tus precios y recibe
-                      reseñas de clientes satisfechos.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex mt-5">
-                  <div>
-                    <FaCheck className="check-option" />
-                  </div>
-                  <div>
-                    <p className="text-paragraph line-height-m">
-                      Consigue mayor visibilidad y nuevos clientes sin invertir
-                      en publicidad costosa.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex mt-5">
-                  <div>
-                    <FaCheck className="check-option" />
-                  </div>
-                  <div>
-                    <p className="text-paragraph line-height-m">
-                      Administra tus citas y mantén el control de tu agenda.
-                    </p>
-                  </div>
+                <div className="col-benefits">
+                  <AnimatedImage
+                    src="/profesional-meredith-aesthetic.jpg"
+                    alt="Cliente de meredith aesthetic"
+                    styles="img-benefits"
+                  />
                 </div>
               </div>
             </div>
@@ -158,12 +196,10 @@ export default function Home() {
             <div className="card-services-one">
               <div>
                 <div className="d-flex">
-                  <Image
-                    src={"/icons/hair-cutting.png"}
-                    className="img-card-services"
-                    width={150}
-                    height={150}
+                  <AnimatedIcon
+                    src="/icons/hair-cutting.png"
                     alt="Corte de cabello y barberia"
+                    styles="img-card-services"
                   />
                 </div>
                 <h3 className="title-card-services">Peluquería y barbería</h3>
@@ -185,11 +221,9 @@ export default function Home() {
             <div className="card-services-two">
               <div>
                 <div className="d-flex">
-                  <Image
+                  <AnimatedIcon
                     src={"/icons/nail-polish.png"}
-                    className="img-card-services"
-                    width={150}
-                    height={150}
+                    styles="img-card-services"
                     alt="Manicure y pedicure"
                   />
                 </div>
@@ -212,11 +246,9 @@ export default function Home() {
             <div className="card-services-one">
               <div>
                 <div className="d-flex">
-                  <Image
+                  <AnimatedIcon
                     src={"/icons/eyebrow.png"}
-                    className="img-card-services"
-                    width={150}
-                    height={150}
+                    styles="img-card-services"
                     alt="Cejas y pestañas"
                   />
                 </div>
@@ -238,11 +270,9 @@ export default function Home() {
             <div className="card-services-two">
               <div>
                 <div className="d-flex">
-                  <Image
+                  <AnimatedIcon
                     src={"/icons/facial.png"}
-                    className="img-card-services"
-                    width={150}
-                    height={150}
+                    styles="img-card-services"
                     alt="Tratamientos faciales y corporales"
                   />
                 </div>
@@ -267,11 +297,9 @@ export default function Home() {
             <div className="card-services-one">
               <div>
                 <div className="d-flex">
-                  <Image
+                  <AnimatedIcon
                     src={"/icons/massage-therapist.png"}
-                    className="img-card-services"
-                    width={150}
-                    height={150}
+                    styles="img-card-services"
                     alt="Bienestar y relajación"
                   />
                 </div>
@@ -294,11 +322,9 @@ export default function Home() {
             <div className="card-services-two">
               <div>
                 <div className="d-flex">
-                  <Image
+                  <AnimatedIcon
                     src={"/icons/hairdresser.png"}
-                    className="img-card-services"
-                    width={150}
-                    height={150}
+                    styles="img-card-services"
                     alt="Imagen personal"
                   />
                 </div>

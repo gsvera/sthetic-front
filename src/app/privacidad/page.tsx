@@ -20,7 +20,7 @@ export default function Privacy() {
         </p>
         <p className="text-privacy">
           Meredith Aesthetic es responsable del uso y protección de tus datos
-          personales. Puedes contactarnos en: meredith.abasotech@gmail.com
+          personales. Puedes contactarnos en: hola@meredith-aesthetic.com
         </p>
       </div>
       <div>
@@ -93,7 +93,7 @@ export default function Privacy() {
         <p className="text-privacy">
           Tienes derecho a acceder, rectificar, cancelar u oponerte al uso de
           tus datos personales (derechos ARCO). Para ejercerlos, envía una
-          solicitud a: meredith.abasotech@gmail.com
+          solicitud a: hola@meredith-aesthetic.com
         </p>
       </div>
       <div>
@@ -116,9 +116,9 @@ export default function Privacy() {
       <div>
         <p className="subtitle-privacy">7. Información de menores de edad</p>
         <p className="text-privacy">
-          Meredith no está dirigida a menores de 18 años. No recolectamos
-          intencionalmente datos de menores. Si detectamos un registro de un
-          menor, eliminaremos su información inmediatamente.
+          Meredith Aesthetic no está dirigida a menores de 18 años. No
+          recolectamos intencionalmente datos de menores. Si detectamos un
+          registro de un menor, eliminaremos su información inmediatamente.
         </p>
       </div>
       <div>
@@ -249,7 +249,7 @@ export default function Privacy() {
         <p className="text-privacy">
           Las suscripciones no son reembolsables, salvo en casos excepcionales
           evaluados individualmente. Para solicitar revisión, escríbenos a:
-          meredith.abasotech@gmail.com
+          hola@meredith-aesthetic.com
         </p>
       </div>
       <div>

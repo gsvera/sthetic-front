@@ -1,24 +1,40 @@
 import Image from "next/image";
 import styles from "@/app/page.module.css";
+import Link from "next/link";
 
 export const MenuPage = () => {
   return (
     <div className={`${styles.menuweb}`}>
       <div className={`${styles.contentmenu}`}>
-        <div className={styles.contentlogo}>
-          <Image
-            src="/meraesthetic-logo.png"
-            alt="Meredith Aesthetic logo"
-            width={70}
-            height={70}
-            priority
-          />
+        <div>
+          <Link href={"/"}>
+            <Image
+              src="/meredith-text-logo.png"
+              alt="Meredith Aesthetic logo"
+              width={120}
+              height={45}
+              priority
+            />
+          </Link>
         </div>
-        <div className={`${styles.dspacebetween} ${styles.widthall}`}>
-          <div className="text-menu">Inicio</div>
-          <div className="text-menu">Servicios</div>
-          <div className="text-menu">Quiero ofrecer mis servicios</div>
-          <div className="text-menu">Descarga la app</div>
+        <div className={`espacebetween widthall list-menu`}>
+          <div className="text-menu">
+            <Link href={"/encuentra-profesionales-de-la-belleza"}>
+              Encuentra a un profesionistas
+            </Link>
+          </div>
+          <div className="text-menu">
+            <Link href={"/app-para-buscar-profesionales-de-la-belleza"}>
+              Quiero ser cliente
+            </Link>
+          </div>
+          <div className="text-menu">
+            <Link
+              href={"/app-para-ofrecer-servicios-de-belleza-y-cuidado-personal"}
+            >
+              Quiero ofrecer mis servicios
+            </Link>
+          </div>
         </div>
       </div>
     </div>
