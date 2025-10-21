@@ -1,16 +1,23 @@
 import styles from "./page.module.css";
-import { FaCheckCircle, FaCheck } from "react-icons/fa";
-import { FaArrowRightLong } from "react-icons/fa6";
-import BannerHeader from "@/components/BannerHeader";
-import ButtonApp from "@/components/ButtonApp";
-import AnimatedImage from "@/components/Image/AnimatedImage";
-import AnimatedIcon from "@/components/Image/AnimatedIcon";
+import { FaCheck } from "react-icons/fa";
+import BannerHeader from "@/components/WebComponents/BannerHeader";
+import ButtonApp from "@/components/WebComponents/Buttons/ButtonApp";
+import AnimatedImage from "@/components/WebComponents/Image/AnimatedImage";
+import CardTypeServices from "@/components/WebComponents/CardTypeServices";
+import { GiCheckMark } from "react-icons/gi";
+import ButtonKnowMore from "@/components/WebComponents/Buttons/ButtonKnowMore";
 
 export default function Home() {
   const buttonApps = (
     <div className="content-btn-app">
-      <ButtonApp textBtn="App para cliente" href="" />
-      <ButtonApp textBtn="App para dar servicio" href="" />
+      <ButtonApp
+        textBtn="App para cliente"
+        href="/app-para-buscar-profesionales-de-la-belleza"
+      />
+      <ButtonApp
+        textBtn="App para dar servicio"
+        href="/app-para-ofrecer-servicios-de-belleza-y-cuidado-personal"
+      />
     </div>
   );
 
@@ -24,21 +31,25 @@ export default function Home() {
 
         <div className="container-body">
           <p className="title mb-3">Bienvenido a Meredith Aesthetic</p>
-          <p className="text-center line-height-m t-secondary text-size-m">
-            El software donde puedes encontrar y ofrecer servicios de estética,
-            belleza y <br /> cuidado personal de forma rápida, segura y
-            profesional.
-          </p>
+          <div className="wd-6 m-horizontal-auto">
+            <p className="text-center line-height-m t-secondary text-size-m">
+              El software donde puedes encontrar y ofrecer servicios de
+              estética, belleza y cuidado personal de forma rápida, segura y
+              profesional.
+            </p>
+          </div>
         </div>
-        <div className="container-body d-flex">
-          <AnimatedImage
-            src="/about-left.webp"
-            alt="Acerca de nosotros"
-            styles=""
-          />
+        <div className="container-body d-flex content-center">
+          <div className="col-5 content-center-xy">
+            <AnimatedImage
+              src="/about-left.webp"
+              alt="Acerca de nosotros"
+              styles=""
+            />
+          </div>
           <div className="col-5 p-7 div-center-xy">
             <div className="">
-              <h2 className="mb-3 t-outfit">¿Quiénes somos?</h2>
+              <h2 className="mb-3 t-outfit c-action">¿Quiénes somos?</h2>
               <p className="text-subtitle mb-3">Calidad de estilo y belleza</p>
               <p className="text-paragraph line-height-m t-secondary ">
                 Nuestra plataforma conecta a clientes que buscan especialistas
@@ -47,14 +58,14 @@ export default function Home() {
               </p>
               <ul className="list-style-one">
                 <li>
-                  <FaCheckCircle className="check-list" /> Cerca de ti
+                  <GiCheckMark className="check-list" /> Cerca de ti
                 </li>
                 <li>
-                  <FaCheckCircle className="check-list" /> Reserva tu cita
+                  <GiCheckMark className="check-list" /> Reserva tu cita
                 </li>
                 <li>
-                  <FaCheckCircle className="check-list" /> Visualiza su trabajo
-                  y recomendaciones
+                  <GiCheckMark className="check-list" /> Visualiza su trabajo y
+                  recomendaciones
                 </li>
               </ul>
             </div>
@@ -67,7 +78,7 @@ export default function Home() {
             </h2>
             <div className="container-body">
               <div className="content-benefits">
-                <div className="col-benefits">
+                <div className="col-benefits content-center-xy">
                   <AnimatedImage
                     src="/cliente-salon-de-belleza.jpg"
                     alt="Cliente de meredith aesthetic"
@@ -76,10 +87,13 @@ export default function Home() {
                 </div>
                 <div className="col-benefits content-text-benefits">
                   <div>
-                    <h3 className="subtitle-benefits mb-3">Si eres cliente</h3>
+                    <p className="title-benefits mb-3">Si eres cliente</p>
+                    <h2 className="subtitle-benefits">
+                      ENCUENTRA Y ELIGE EL MEJOR ESPECIALISTA QUE DESEAS
+                    </h2>
                     <div className="d-flex mt-5">
                       <div>
-                        <FaCheck className="check-option" />
+                        <GiCheckMark className="check-option" />
                       </div>
                       <div>
                         <p className="text-benefits">
@@ -90,7 +104,7 @@ export default function Home() {
                     </div>
                     <div className="d-flex mt-5">
                       <div>
-                        <FaCheck className="check-option" />
+                        <GiCheckMark className="check-option" />
                       </div>
                       <div>
                         <p className="text-benefits">
@@ -102,7 +116,7 @@ export default function Home() {
                     </div>
                     <div className="d-flex mt-5">
                       <div>
-                        <FaCheck className="check-option" />
+                        <GiCheckMark className="check-option" />
                       </div>
                       <div>
                         <p className="text-benefits">
@@ -113,7 +127,7 @@ export default function Home() {
                     </div>
                     <div className="d-flex mt-5">
                       <div>
-                        <FaCheck className="check-option" />
+                        <GiCheckMark className="check-option" />
                       </div>
                       <div>
                         <p className="text-benefits">
@@ -122,18 +136,27 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
+                    <div className="mt-20">
+                      <ButtonKnowMore
+                        textBtn="Saber más"
+                        href="/app-para-buscar-profesionales-de-la-belleza"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="content-benefits">
                 <div className="col-benefits content-text-benefits">
                   <div>
-                    <h3 className="subtitle-benefits mb-3">
-                      Si eres profesional de la belleza:
-                    </h3>
+                    <p className="title-benefits mb-3">
+                      Si eres profesional de la belleza y/o cuidado personal
+                    </p>
+                    <h2 className="subtitle-benefits">
+                      ADMINISTRA TU TIEMPO Y SE VISIBLE PARA MÁS CLIENTES
+                    </h2>
                     <div className="d-flex mt-5">
                       <div>
-                        <FaCheck className="check-option" />
+                        <GiCheckMark className="check-option" />
                       </div>
                       <div>
                         <p className="text-benefits">
@@ -145,7 +168,7 @@ export default function Home() {
                     </div>
                     <div className="d-flex mt-5">
                       <div>
-                        <FaCheck className="check-option" />
+                        <GiCheckMark className="check-option" />
                       </div>
                       <div>
                         <p className="text-benefits">
@@ -156,7 +179,7 @@ export default function Home() {
                     </div>
                     <div className="d-flex mt-5">
                       <div>
-                        <FaCheck className="check-option" />
+                        <GiCheckMark className="check-option" />
                       </div>
                       <div>
                         <p className="text-benefits">
@@ -167,7 +190,7 @@ export default function Home() {
                     </div>
                     <div className="d-flex mt-5">
                       <div>
-                        <FaCheck className="check-option" />
+                        <GiCheckMark className="check-option" />
                       </div>
                       <div>
                         <p className="text-benefits">
@@ -175,9 +198,12 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
+                    <div className="mt-20">
+                      <ButtonKnowMore textBtn="Saber más" href="" />
+                    </div>
                   </div>
                 </div>
-                <div className="col-benefits">
+                <div className="col-benefits content-center-xy">
                   <AnimatedImage
                     src="/profesional-meredith-aesthetic.jpg"
                     alt="Cliente de meredith aesthetic"
@@ -193,156 +219,60 @@ export default function Home() {
             Servicios más buscados en nuestra plataforma
           </h2>
           <div className="content-card-services mty-50">
-            <div className="card-services-one">
-              <div>
-                <div className="d-flex">
-                  <AnimatedIcon
-                    src="/icons/hair-cutting.png"
-                    alt="Corte de cabello y barberia"
-                    styles="img-card-services"
-                  />
-                </div>
-                <h3 className="title-card-services">Peluquería y barbería</h3>
-                <div className="content-text-card-services">
-                  <p className="description-card-services">
-                    Cortes modernos, coloración, balayage, keratina, diseño y
-                    tinte de barba.
-                  </p>
-                  <div className="content-view-more">
-                    <a href="#" className="view-more">
-                      Ver más
-                      <FaArrowRightLong style={{ marginLeft: "5px" }} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <CardTypeServices
+              classNameComponent="card-services-one"
+              srcImageIcon="/icons/hair-cutting.png"
+              altImageIcon="Corte de cabello y barberia"
+              titleCard="Peluquería y barbería"
+              descriptionCard="Cortes modernos, coloración, balayage, keratina, diseño y
+                    tinte de barba."
+              href=""
+            />
+            <CardTypeServices
+              classNameComponent="card-services-two"
+              srcImageIcon="/icons/nail-polish.png"
+              altImageIcon="Manicure y pedicure"
+              titleCard="Manicure y pedicure"
+              descriptionCard="Uñas acrílicas, gelish, decoración, parafina para manos y
+                    pies."
+              href=""
+            />
+            <CardTypeServices
+              classNameComponent="card-services-one"
+              srcImageIcon="/icons/eyebrow.png"
+              altImageIcon="Cejas y pestañas"
+              titleCard="Cejas y pestañas"
+              descriptionCard="Lashista, laminado, tinte y diseño personalizado."
+              href=""
+            />
+            <CardTypeServices
+              classNameComponent="card-services-two"
+              srcImageIcon="/icons/facial.png"
+              altImageIcon="Tratamientos faciales y corporales"
+              titleCard="Tratamientos faciales y corporales"
+              descriptionCard="Limpieza facial profunda, microdermoabrasión, peeling
+                    químico, radiofrecuencia, tratamientos reductores."
+              href=""
+            />
 
-            <div className="card-services-two">
-              <div>
-                <div className="d-flex">
-                  <AnimatedIcon
-                    src={"/icons/nail-polish.png"}
-                    styles="img-card-services"
-                    alt="Manicure y pedicure"
-                  />
-                </div>
-                <h3 className="title-card-services">Manicure y pedicure</h3>
-                <div className="content-text-card-services">
-                  <p className="description-card-services">
-                    Uñas acrílicas, gelish, decoración, parafina para manos y
-                    pies.
-                  </p>
-                  <div className="content-view-more">
-                    <a href="#" className="view-more">
-                      Ver más
-                      <FaArrowRightLong style={{ marginLeft: "5px" }} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card-services-one">
-              <div>
-                <div className="d-flex">
-                  <AnimatedIcon
-                    src={"/icons/eyebrow.png"}
-                    styles="img-card-services"
-                    alt="Cejas y pestañas"
-                  />
-                </div>
-                <h3 className="title-card-services">Cejas y pestañas</h3>
-                <div className="content-text-card-services">
-                  <p className="description-card-services">
-                    Lashista, laminado, tinte y diseño personalizado.
-                  </p>
-                  <div className="content-view-more">
-                    <a href="#" className="view-more">
-                      Ver más
-                      <FaArrowRightLong style={{ marginLeft: "5px" }} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card-services-two">
-              <div>
-                <div className="d-flex">
-                  <AnimatedIcon
-                    src={"/icons/facial.png"}
-                    styles="img-card-services"
-                    alt="Tratamientos faciales y corporales"
-                  />
-                </div>
-                <h3 className="title-card-services">
-                  Tratamientos faciales y corporales
-                </h3>
-                <div className="content-text-card-services">
-                  <p className="description-card-services">
-                    Limpieza facial profunda, microdermoabrasión, peeling
-                    químico, radiofrecuencia, tratamientos reductores.
-                  </p>
-                  <div className="content-view-more">
-                    <a href="#" className="view-more">
-                      Ver más
-                      <FaArrowRightLong style={{ marginLeft: "5px" }} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card-services-one">
-              <div>
-                <div className="d-flex">
-                  <AnimatedIcon
-                    src={"/icons/massage-therapist.png"}
-                    styles="img-card-services"
-                    alt="Bienestar y relajación"
-                  />
-                </div>
-                <h3 className="title-card-services">Bienestar y relajación</h3>
-                <div className="content-text-card-services">
-                  <p className="description-card-services">
-                    Masajes terapéuticos, relajantes, linfáticos, reflexología,
-                    aromaterapia y bronceado sin sol.
-                  </p>
-                  <div className="content-view-more">
-                    <a href="#" className="view-more">
-                      Ver más
-                      <FaArrowRightLong style={{ marginLeft: "5px" }} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="card-services-two">
-              <div>
-                <div className="d-flex">
-                  <AnimatedIcon
-                    src={"/icons/hairdresser.png"}
-                    styles="img-card-services"
-                    alt="Imagen personal"
-                  />
-                </div>
-                <h3 className="title-card-services">Imagen personal</h3>
-                <div className="content-text-card-services">
-                  <p className="description-card-services">
-                    Maquillaje profesional, asesoría de imagen y personal
-                    shopper.
-                  </p>
-                  <div className="content-view-more">
-                    <a href="#" className="view-more">
-                      Ver más
-                      <FaArrowRightLong style={{ marginLeft: "5px" }} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <CardTypeServices
+              classNameComponent="card-services-one"
+              srcImageIcon="/icons/massage-therapist.png"
+              altImageIcon="Bienestar y relajación"
+              titleCard="Bienestar y relajación"
+              descriptionCard="Masajes terapéuticos, relajantes, linfáticos, reflexología,
+                    aromaterapia y bronceado sin sol."
+              href=""
+            />
+            <CardTypeServices
+              classNameComponent="card-services-two"
+              srcImageIcon="/icons/hairdresser.png"
+              altImageIcon="Imagen personal"
+              titleCard="Imagen personal"
+              descriptionCard="Maquillaje profesional, asesoría de imagen y personal
+                    shopper."
+              href=""
+            />
           </div>
         </div>
         <div className="container-body content-width-7">

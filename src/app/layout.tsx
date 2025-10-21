@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import MenuPage from "@/components/MenuPage";
-import FooterPage from "@/components/FooterPage";
+import MenuPage from "@/components/WebComponents/MenuPage";
+import FooterPage from "@/components/WebComponents/FooterPage";
+import ReactQueryProvider from "@/providers/ReactQueryProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <MenuPage />
-        {children}
-        <FooterPage />
+        <ReactQueryProvider>
+          <MenuPage />
+          {children}
+          <FooterPage />
+        </ReactQueryProvider>
       </body>
     </html>
   );

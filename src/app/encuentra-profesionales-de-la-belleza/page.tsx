@@ -1,4 +1,4 @@
-import BannerHeader from "@/components/BannerHeader";
+import BannerHeader from "@/components/WebComponents/BannerHeader";
 
 export default function findWorker() {
   return (
