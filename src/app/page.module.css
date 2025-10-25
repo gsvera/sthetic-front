@@ -195,23 +195,12 @@ a.secondary {
   margin: 20px auto;
   border-radius: 50px;
   position: fixed;
-  
+  z-index: 999;
   background: rgba(43, 43, 43, 0.75); 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(212, 175, 55, 0.15); 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-
-  /* background: linear-gradient(
-    135deg,
-    rgba(43, 43, 43, 0.95),
-    rgba(89, 61, 99, 0.85)
-  );
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); */
-
-   /* background: #2B2B2B;
-  border: 1px solid #D4AF37;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); */
  padding: 1rem 2rem;
 }
 .contentmenu{

@@ -1,5 +1,5 @@
 "use client";
-import { AnimationImageType } from "@/constans/Constants";
+import { AnimationImageType } from "@/constans/GeneralType";
 import { motion } from "framer-motion";
 
 export default function AnimatedImage({

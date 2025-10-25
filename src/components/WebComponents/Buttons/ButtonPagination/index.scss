@@ -1,0 +1,22 @@
+.button-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn-pagination{
+        background: transparent;
+        border: none;
+    }
+    .row-change-page{
+        color: var(--accent);
+        font-size: 25px;
+        transition: transform 0.3s ease;
+    }
+    .row-change-page:hover {
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .row-change-page-disabled{
+        color: var(--muted);
+        font-size: 25px;
+    }
+}

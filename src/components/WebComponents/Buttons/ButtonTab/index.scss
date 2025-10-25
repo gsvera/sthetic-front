@@ -1,0 +1,22 @@
+.tab-select{
+    background-color: var(--accent);
+    border-radius: 5px;
+    color: var(--textLight);
+    cursor: pointer;
+    font-family: Outfit;
+    width: 32%;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2em;
+}
+.tab-unselect{
+    background-color: var(--muted);
+    border-radius: 5px;
+    color: var(--action);
+    cursor: pointer;
+    font-family: Outfit;
+    width: 32%;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2em;
+}

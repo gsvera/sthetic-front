@@ -8,7 +8,7 @@ import Link from "next/link";
 import { GiCheckMark } from "react-icons/gi";
 import { apiTypeService } from "@/api/catalog/";
 import { ResponseApi } from "@/api/responseApi";
-import { TypeServiceType } from "@/constans/Constants";
+import { TypeServiceType } from "@/constans/GeneralType";
 import { TypeServiceCard } from "@/components/WebComponents/TypeServiceCard";
 
 export default function AppWorker() {

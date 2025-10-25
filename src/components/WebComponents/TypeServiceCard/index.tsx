@@ -1,17 +1,22 @@
-import { TypeServiceType } from "@/constans/Constants";
+import { TypeServiceType } from "@/constans/GeneralType";
 import AnimatedIcon from "../Image/AnimatedIcon";
+import { useMemo } from "react";
 
 export const TypeServiceCard = ({
   icon,
   typeServiceNameEs,
-  descriptionEs,
 }: TypeServiceType) => {
+  const img: string = useMemo(
+    () =>
+      icon !== undefined && icon !== null ? icon : "/meredith-text-logo.png",
+    [icon]
+  );
   return (
     <div className="type-service-card content-center-xy">
       <div>
         <div className="text-center">
           <AnimatedIcon
-            src={icon !== null ? icon : "/meredith-text-logo.png"}
+            src={img}
             alt={typeServiceNameEs}
             styles={`${
               icon !== null

@@ -1,0 +1,7 @@
+.loading-view{
+    display: flex;
+    justify-content: center;
+    .ant-spin-dot{
+        color: var(--accent);
+    }
+}

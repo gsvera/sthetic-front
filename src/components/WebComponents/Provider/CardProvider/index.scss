@@ -1,0 +1,71 @@
+.card-provider {
+    border: 2px solid var(--accent);
+    padding: 15px;
+    margin-bottom: 35px;
+    display: flex;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 0 22px -4px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+    }
+    .content-card-provider-img {
+        width: 40%;
+    }
+    .card-provider-img{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+    .title-card-provider{
+        font-weight: bold;
+        color: var(--action);
+        font-size: 2em;
+        font-family: Outfit;
+    }
+    .content-description-card-provider{
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 100px;
+    }
+    .content-text-card-provider{
+        width: 60%;
+        padding: 10px 30px;
+    }
+    .content-badge-card-provider{
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    .btn-card-provider{
+        background-color: transparent;
+        border: 1px solid var(--accent);
+        padding: 10px 40px;
+        border-radius: 20px;
+        margin: 20px auto;
+        color: var(--action);
+        font-weight: bold;
+        transition: transform 0.3s ease;
+    }
+    .btn-card-provider:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: var(--accent);
+        color: var(--textLight);
+    }
+    .ant-typography{
+        font-size: 1em;
+    }
+    .read-more{
+        font-size: 0.8em;
+        &:hover {
+            cursor: pointer;
+            color: var(--accent);
+        }
+    }
+}
