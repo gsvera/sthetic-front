@@ -12,7 +12,7 @@ export const ItemCommentsProvider = ({ item }: itemCommentsProvider) => {
     <div className="item-comments">
       <div className="content-space-between">
         <p>{convertDateToGeneralFormat(item.createdAt)}</p>
-        <StarRating rating={item.rating} sizeStar={15} />
+        <StarRating rating={item.rating} />
       </div>
       <p className="name-client-item-comments">
         {item.nameClient.replaceAll("null", "")}
