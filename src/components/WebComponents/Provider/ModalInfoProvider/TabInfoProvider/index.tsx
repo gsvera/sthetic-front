@@ -39,7 +39,7 @@ export const TabInfoProvider = ({
           ))}
         </div>
       </div>
-      <div className="mb-3">
+      <div className="mb-3 content-gallery">
         {isLoading ? (
           <LoadingView />
         ) : (

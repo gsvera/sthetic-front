@@ -1,7 +1,6 @@
 "use client";
 import { REACT_QUERY_KEYS } from "@/api/react-query-keys";
 import BannerHeader from "@/components/WebComponents/BannerHeader";
-import ButtonApp from "@/components/WebComponents/Buttons/ButtonApp";
 import AnimatedImage from "@/components/WebComponents/Image/AnimatedImage";
 import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
@@ -20,16 +19,11 @@ export default function AppWorker() {
     },
   });
 
-  const ChildBanner = (
-    <div className="content-btn-single-app">
-      <ButtonApp textBtn="App para profesionistas" href="" />
-    </div>
-  );
   return (
     <div>
       <BannerHeader
         slogan="Administra tus citas y adquiere nuevos clientes"
-        // child={ChildBanner}
+        bannerStyle="background-work"
       />
       <div className="container-body">
         <div className="container-message-principal">
@@ -43,7 +37,7 @@ export default function AppWorker() {
           </p>
         </div>
       </div>
-      <div className="container-body d-flex">
+      <div className="container-body d-flex wd-mob-9 m-horizontal-mob-auto">
         <div className="content-benefits">
           <div className="col-benefits content-center-xy">
             <AnimatedImage
@@ -120,8 +114,55 @@ export default function AppWorker() {
         </div>
       </div>
 
+      <div className="container-body">
+        <div>
+          <p className="text-center subtitle">
+            Descarga la app de trabajo en las tiendas oficiales
+          </p>
+          <div className="grid-space-between content-center wd-7 m-horizontal-auto">
+            <div className="col-5 d-flex content-center mty-50">
+              <div className="content-benefits img-mob-center">
+                <AnimatedImage
+                  src="/login-work.jpg"
+                  alt="App cliente"
+                  styles="img-demo-app"
+                />
+              </div>
+            </div>
+            <div className="col-5 wd-6 content-center-xy m-horizontal-auto">
+              <div className="d-wrap content-benefits">
+                <div className="wd-100 content-center m-vertical-20 content-img-download-app img-mob-center">
+                  <Link
+                    href="https://play.google.com/store/apps/details?id=com.abasotech.meredithcarework&pcampaignid=web_share"
+                    target="_blank"
+                  >
+                    <AnimatedImage
+                      src="/google-play.avif"
+                      alt="Google play"
+                      styles="img-download-app"
+                    />
+                  </Link>
+                </div>
+                <div className="wd-100 content-center m-vertical-20 ">
+                  <div className="content-img-download-app-disabled img-mob-center">
+                    <Link href={""}>
+                      <AnimatedImage
+                        src="/app-store.avif"
+                        alt="App Store"
+                        styles="img-download-app disabled-app"
+                      />
+                    </Link>
+                    <div className="next-time">Próximamente</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container-body mb-100">
-        <h2 className="subtitle text-center mb-3">
+        <h2 className="subtitle text-center mb-3 mt-mob-grl">
           Tipos de negocio para la app
         </h2>
         <div className="wd-6 m-horizontal-auto mb-4">
@@ -142,47 +183,6 @@ export default function AppWorker() {
                 />
               ))
             : ""}
-        </div>
-      </div>
-
-      <div className="container-body">
-        <div>
-          <p className="text-center subtitle">
-            Descarga la app de trabajo en las tiendas oficiales
-          </p>
-          <div className="grid-space-between content-center wd-7 m-horizontal-auto">
-            <div className="col-5 d-flex content-center mty-50">
-              <div className="content-benefits">
-                <AnimatedImage
-                  src="/login-work.jpg"
-                  alt="App cliente"
-                  styles="img-demo-app"
-                />
-              </div>
-            </div>
-            <div className="col-5 wd-6 content-center-xy m-horizontal-auto">
-              <div className="d-wrap content-benefits">
-                <div className="wd-100 content-center m-vertical-20 content-img-download-app">
-                  <Link href="">
-                    <AnimatedImage
-                      src="/google-play.avif"
-                      alt="Google play"
-                      styles="img-download-app"
-                    />
-                  </Link>
-                </div>
-                <div className="wd-100 content-center m-vertical-20 content-img-download-app">
-                  <Link href={""}>
-                    <AnimatedImage
-                      src="/app-store.avif"
-                      alt="App Store"
-                      styles="img-download-app"
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

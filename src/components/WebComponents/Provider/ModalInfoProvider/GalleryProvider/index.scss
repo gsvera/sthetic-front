@@ -1,5 +1,8 @@
 .gallery-provider{
     top: 20px !important;
+    .ant-modal-body {
+      margin-top: 25px;
+    }
 }
 .modal-overlay {
   position: fixed;

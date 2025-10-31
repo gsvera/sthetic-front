@@ -25,13 +25,14 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <BannerHeader
-          slogan="La app dedicado a profesionales de la belleza y cuidado personal"
+          bannerStyle="background-home"
+          slogan="La aplicación que conecta a clientes con profesionales de la belleza y cuidado personal"
           child={buttonApps}
         />
 
         <div className="container-body">
           <p className="title mb-3">Bienvenido a Meredith Aesthetic</p>
-          <div className="wd-6 m-horizontal-auto">
+          <div className="wd-6 wd-mob-9 m-horizontal-auto">
             <p className="text-center line-height-m t-secondary text-size-m">
               El software donde puedes encontrar y ofrecer servicios de
               estética, belleza y cuidado personal de forma rápida, segura y
@@ -39,15 +40,15 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="container-body d-flex content-center">
+        <div className="container-body content-center">
           <div className="col-5 content-center-xy">
             <AnimatedImage
               src="/about-left.webp"
               alt="Acerca de nosotros"
-              styles=""
+              styles="img-home-somos"
             />
           </div>
-          <div className="col-5 p-7 div-center-xy">
+          <div className="col-5 p-7 mt-mob-grl div-center-xy">
             <div className="">
               <h2 className="mb-3 t-outfit c-action">¿Quiénes somos?</h2>
               <p className="text-subtitle mb-3">Calidad de estilo y belleza</p>
@@ -71,7 +72,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container-body">
+        <div className="container-body containter-mob mt-mob-grl">
           <div>
             <h2 className="text-center subtitle">
               ¿Qué puedes hacer en Meredith Aesthetic?
@@ -145,7 +146,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="content-benefits">
+              <div className="content-benefits reverse-mob-col">
                 <div className="col-benefits content-text-benefits">
                   <div>
                     <p className="title-benefits mb-3">
@@ -214,7 +215,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container-body">
+        <div className="container-body mt-mob-grl">
           <h2 className="text-center subtitle">
             Servicios más buscados en nuestra plataforma
           </h2>
@@ -275,66 +276,68 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="container-body content-width-7">
-          <h2 className="text-center subtitle">
-            ¿Por qué elegir Meredith Aesthetic?
-          </h2>
-          <div className="container-body">
-            <div className="d-flex content-center mt-5">
-              <div>
-                <FaCheck className="check-option" />
+        <div className="container-body">
+          <div className="wd-7 m-horizontal-auto wd-mob-9 mb-mob-grl">
+            <h2 className="text-center subtitle">
+              ¿Por qué elegir Meredith Aesthetic?
+            </h2>
+            <div className="container-body">
+              <div className="d-flex content-center mt-5">
+                <div>
+                  <FaCheck className="check-option" />
+                </div>
+                <div>
+                  <p className="text-selection">
+                    Amplia red de profesionales de la estética y la belleza.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-selection">
-                  Amplia red de profesionales de la estética y la belleza.
-                </p>
-              </div>
-            </div>
 
-            <div className="d-flex content-center mt-5">
-              <div>
-                <FaCheck className="check-option" />
+              <div className="d-flex content-center mt-5">
+                <div>
+                  <FaCheck className="check-option" />
+                </div>
+                <div>
+                  <p className="text-selection">
+                    Comparte y recibe reseñas reales para elegir con confianza.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-selection">
-                  Comparte y recibe reseñas reales para elegir con confianza.
-                </p>
-              </div>
-            </div>
 
-            <div className="d-flex content-center mt-5">
-              <div>
-                <FaCheck className="check-option" />
+              <div className="d-flex content-center mt-5">
+                <div>
+                  <FaCheck className="check-option" />
+                </div>
+                <div>
+                  <p className="text-selection">
+                    Agenda y organiza tus servicios desde un solo lugar.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-selection">
-                  Agenda y organiza tus servicios desde un solo lugar.
-                </p>
-              </div>
-            </div>
 
-            <div className="d-flex content-center mt-5">
-              <div>
-                <FaCheck className="check-option" />
+              <div className="d-flex content-center mt-5">
+                <div>
+                  <FaCheck className="check-option" />
+                </div>
+                <div>
+                  <p className="text-selection">
+                    Una comunidad enfocada en resaltar la belleza y el bienestar
+                    personal.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-selection">
-                  Una comunidad enfocada en resaltar la belleza y el bienestar
-                  personal.
-                </p>
-              </div>
-            </div>
 
-            <div className="d-flex content-center mt-5">
-              <div>
-                <FaCheck className="check-option" />
-              </div>
-              <div>
-                <p className="text-selection">
-                  Ya sea que quieras encontrar al mejor especialista cerca de ti
-                  o registrarte como profesional de la estética, en Meredith
-                  Aesthetic lo tienes todo en un solo lugar.
-                </p>
+              <div className="d-flex content-center mt-5">
+                <div>
+                  <FaCheck className="check-option" />
+                </div>
+                <div>
+                  <p className="text-selection">
+                    Ya sea que quieras encontrar al mejor especialista cerca de
+                    ti o registrarte como profesional de la estética, en
+                    Meredith Aesthetic lo tienes todo en un solo lugar.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -1,4 +1,10 @@
 .star-icon {
     margin: 0 5px;
     color: var(--accent);
+    @media(max-width: 520px) {
+        font-size: 18px;
+    }
+    @media(min-width: 520px){
+        font-size: 22px;
+    }
 }

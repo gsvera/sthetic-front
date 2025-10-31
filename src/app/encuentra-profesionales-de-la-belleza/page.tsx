@@ -141,7 +141,10 @@ export default function FindWorker() {
 
   return (
     <div>
-      <BannerHeader slogan="Encuentra al profesionista de la estética y cuidado personal ideal para ti" />
+      <BannerHeader
+        slogan="Encuentra al profesionista de la estética y cuidado personal ideal para ti"
+        bannerStyle="banner-search"
+      />
       <div className="content-search content-center" id="content-search">
         <div>
           <div className="mb-3">
@@ -153,33 +156,34 @@ export default function FindWorker() {
               darán un excelente servicio.
             </p>
           </div>
-          <Select
-            showSearch
-            placeholder={
-              <div className="c-action">Seleccione un tipo de servicio</div>
-            }
-            optionFilterProp="label"
-            onChange={handleSelectListType}
-            mode="multiple"
-            style={{ padding: 8 }}
-            maxTagCount="responsive"
-            options={listType}
-            allowClear
-          />
-          <Select
-            showSearch
-            placeholder={<div className="c-action">Seleccione un Estado</div>}
-            optionFilterProp="label"
-            onChange={handleSelectState}
-            options={listState}
-          />
-          <button
-            type="button"
-            className="btn-search"
-            onClick={searchProviders}
-          >
-            Buscar
-          </button>
+          <div>
+            <Select
+              showSearch
+              placeholder={
+                <div className="c-action">Seleccione un tipo de servicio</div>
+              }
+              optionFilterProp="label"
+              onChange={handleSelectListType}
+              mode="multiple"
+              maxTagCount="responsive"
+              options={listType}
+              allowClear
+            />
+            <Select
+              showSearch
+              placeholder={<div className="c-action">Seleccione un Estado</div>}
+              optionFilterProp="label"
+              onChange={handleSelectState}
+              options={listState}
+            />
+            <button
+              type="button"
+              className="btn-search"
+              onClick={searchProviders}
+            >
+              Buscar
+            </button>
+          </div>
         </div>
       </div>
       <div className="wd-7 m-horizontal-auto">
@@ -202,19 +206,19 @@ export default function FindWorker() {
             : ""}
         </div>
         <div className="content-pagination">
-          <div className="wd-7 content-center">
+          <div className="wd-7 content-center m-horizontal-mob-auto">
             <button
               type="button"
               className={`${
                 disableNextButton ? "btn-next-page-disabled" : "btn-next-page"
-              }`}
+              } wd-mob-10`}
               disabled={disableNextButton}
               onClick={handleOnPressNextPage}
             >
               Siguiente pagina <FiArrowRight className="ml-1" size={20} />
             </button>
           </div>
-          <div className="wd-2 content-center-xy">
+          <div className="wd-2 wd-mob-9 mt-mob-2 content-center-xy m-horizontal-mob-auto">
             <ButtonPagination
               page={pageParams.page}
               totalPages={totalPages}

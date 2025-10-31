@@ -23,15 +23,29 @@
         display: flex;
         justify-content: space-between;
         padding: 0 10px;
-        width: 50%;
         margin: 0 auto;
+    }
+    @media(max-width: 520px) {
+        .row-attributes{
+            width: 80%;    
+        }
+        .btn-show-more {
+            width: 100%;
+        }
+    }
+    @media(min-width: 520px) {
+        .row-attributes{
+            width: 50%;
+        }
+        .btn-show-more {
+            width: 40%;
+        }
     }
     .value {
         color: var(--text);
         text-align: center;
     }
     .btn-show-more {
-        width: 40%;
         margin: 10px auto 0 ;
         border-radius: 20px;
         background-color: transparent;

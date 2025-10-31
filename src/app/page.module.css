@@ -125,8 +125,6 @@ a.secondary {
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
   }
 
   .main {
@@ -192,7 +190,7 @@ a.secondary {
   width: 90%;
   left: 0;
   right: 0;
-  margin: 20px auto;
+  margin: 1rem auto;
   border-radius: 50px;
   position: fixed;
   z-index: 999;

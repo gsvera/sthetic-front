@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import ButtonKnowMore from "../Buttons/ButtonKnowMore";
@@ -8,14 +7,12 @@ export const FooterPage = () => {
     <div className="footer">
       <div className="m-horizontal-auto row-grid">
         <div className="col-footer">
-          <div className="content-center">
+          <div className="content-center content-logo-footer">
             <Link href={"/"}>
-              <Image
+              <img
+                className="img-footer"
                 src="/meredith-text-logo.png"
-                alt="Meredith Aesthetic logo"
-                width={120}
-                height={45}
-                priority
+                alt="Logo Meredith Aesthetic"
               />
             </Link>
           </div>
@@ -36,7 +33,7 @@ export const FooterPage = () => {
         </div>
         <div className="col-footer">
           <h4 className="title-footer">Contáctanos</h4>
-          <div className="mt-2">
+          <div className="mt-2 mt-mob-25">
             <Link
               href={"mailto:hola@meredith-aesthetic.com"}
               className="text-footer text-footer-link"
@@ -44,7 +41,7 @@ export const FooterPage = () => {
               <AiOutlineMail /> hola@meredith-aesthetic.com
             </Link>
           </div>
-          <div className="mt-1">
+          <div className="mt-1 mt-mob-25">
             <Link
               href={"tel:+9987578949"}
               className="text-footer text-footer-link"

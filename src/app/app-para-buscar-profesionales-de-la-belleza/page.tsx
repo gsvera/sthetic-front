@@ -5,16 +5,11 @@ import Link from "next/link";
 import { GiCheckMark } from "react-icons/gi";
 
 export default function AppClient() {
-  const ChildBanner = (
-    <div className="content-btn-single-app">
-      <ButtonApp textBtn="App para cliente" href="" />
-    </div>
-  );
   return (
     <div>
       <BannerHeader
         slogan="Agende citas con los mejores profesionales de la belleza y cuidado personal"
-        // child={ChildBanner}
+        bannerStyle="background-client"
       />
       <div className="container-body">
         <div className="container-message-principal">
@@ -27,7 +22,7 @@ export default function AppClient() {
           </p>
         </div>
       </div>
-      <div className="container-body d-flex">
+      <div className="container-body d-flex wd-mob-9 m-horizontal-mob-auto">
         <div className="content-benefits">
           <div className="col-benefits content-center-xy">
             <AnimatedImage
@@ -103,12 +98,12 @@ export default function AppClient() {
       </div>
       <div className="container-body">
         <div>
-          <p className="text-center subtitle">
+          <p className="text-center subtitle mt-mob-grl">
             Descarga la app cliente en las tiendas oficiales
           </p>
           <div className="grid-space-between content-center wd-7 m-horizontal-auto">
             <div className="col-5 d-flex content-center mty-50">
-              <div className="content-benefits">
+              <div className="content-benefits img-mob-center">
                 <AnimatedImage
                   src="/login-client.jpg"
                   alt="App cliente"
@@ -118,23 +113,29 @@ export default function AppClient() {
             </div>
             <div className="col-5 wd-6 content-center-xy m-horizontal-auto">
               <div className="d-wrap content-benefits">
-                <div className="wd-100 content-center m-vertical-20 content-img-download-app">
-                  <Link href="">
-                    <AnimatedImage
-                      src="/google-play.avif"
-                      alt="Google play"
-                      styles="img-download-app"
-                    />
-                  </Link>
+                <div className="wd-100 content-center m-vertical-20">
+                  <div className="content-img-download-app-disabled img-mob-center">
+                    <Link href="">
+                      <AnimatedImage
+                        src="/google-play.avif"
+                        alt="Google play"
+                        styles="img-download-app disabled-app"
+                      />
+                    </Link>
+                    <div className="next-time">Próximamente</div>
+                  </div>
                 </div>
-                <div className="wd-100 content-center m-vertical-20 content-img-download-app">
-                  <Link href={""}>
-                    <AnimatedImage
-                      src="/app-store.avif"
-                      alt="App Store"
-                      styles="img-download-app"
-                    />
-                  </Link>
+                <div className="wd-100 content-center m-vertical-20">
+                  <div className="content-img-download-app-disabled img-mob-center">
+                    <Link href={""}>
+                      <AnimatedImage
+                        src="/app-store.avif"
+                        alt="App Store"
+                        styles="img-download-app disabled-app"
+                      />
+                    </Link>
+                    <div className="next-time">Próximamente</div>
+                  </div>
                 </div>
               </div>
             </div>
