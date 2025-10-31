@@ -64,7 +64,7 @@ export const TabCommentsProvider = ({
                   alignItems: "center",
                 }}
               >
-                <Rating numberRaiting={qualification.rating} iconSize={20} />
+                <Rating numberRaiting={qualification.rating} />
               </div>
               <p className="qualifications">
                 {qualification.listComments?.length} calificaciones
