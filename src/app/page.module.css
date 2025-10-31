@@ -199,7 +199,7 @@ a.secondary {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(212, 175, 55, 0.15); 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
- padding: 1rem 2rem;
+  padding: 1rem 2rem;
 }
 .contentmenu{
   display: flex;

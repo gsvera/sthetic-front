@@ -283,7 +283,7 @@ export default function Home() {
             </h2>
             <div className="container-body">
               <div className="d-flex content-center mt-5">
-                <div>
+                <div className="icon-selection">
                   <FaCheck className="check-option" />
                 </div>
                 <div>
@@ -294,7 +294,7 @@ export default function Home() {
               </div>
 
               <div className="d-flex content-center mt-5">
-                <div>
+                <div className="icon-selection">
                   <FaCheck className="check-option" />
                 </div>
                 <div>
@@ -305,7 +305,7 @@ export default function Home() {
               </div>
 
               <div className="d-flex content-center mt-5">
-                <div>
+                <div className="icon-selection">
                   <FaCheck className="check-option" />
                 </div>
                 <div>
@@ -316,7 +316,7 @@ export default function Home() {
               </div>
 
               <div className="d-flex content-center mt-5">
-                <div>
+                <div className="icon-selection">
                   <FaCheck className="check-option" />
                 </div>
                 <div>
@@ -328,7 +328,7 @@ export default function Home() {
               </div>
 
               <div className="d-flex content-center mt-5">
-                <div>
+                <div className="icon-selection">
                   <FaCheck className="check-option" />
                 </div>
                 <div>

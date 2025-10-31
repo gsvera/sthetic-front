@@ -43,7 +43,7 @@ export const FooterPage = () => {
           </div>
           <div className="mt-1 mt-mob-25">
             <Link
-              href={"tel:+9987578949"}
+              href={"tel:9987578949"}
               className="text-footer text-footer-link"
             >
               <AiOutlinePhone /> +52 (998) 757 8949
