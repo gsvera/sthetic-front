@@ -1179,3 +1179,15 @@ a {
   font-family: Outfit;
   font-weight: bold;
 }
+.list-data-required{
+  margin-top: 50px;
+  margin-left: 20px;
+  list-style: none;
+}
+.list-data-required > li {
+  margin-bottom: 10px;
+}
+.check-list-data{
+  color: var(--accent);
+  margin-right: 5px;
+}
