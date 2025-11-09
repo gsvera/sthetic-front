@@ -103,7 +103,7 @@ export default function FindWorker() {
   const handleSelectState = (data: number) => {
     setPageParams((params) => ({
       ...params,
-      defaultState: data.toString(),
+      defaultState: data ? data.toString() : "",
     }));
   };
 
@@ -171,6 +171,7 @@ export default function FindWorker() {
             />
             <Select
               showSearch
+              allowClear
               placeholder={<div className="c-action">Seleccione un Estado</div>}
               optionFilterProp="label"
               onChange={handleSelectState}

@@ -2,6 +2,7 @@ import axiosInstance from "..";
 
 const BASE_URL = "/catalog-type-service";
 const BASE_URL_CATALOG = "/catalog";
+const BASE_URL_LADA = "/catalog-lada-phone";
 
 export const apiTypeService = {
   getAll: function () {
@@ -17,6 +18,9 @@ export const apiTypeService = {
     return axiosInstance.get(
       `${BASE_URL}/get-detail-service-by-id?id-project=${id}`
     );
+  },
+  getAllLada: function () {
+    return axiosInstance.get(`${BASE_URL_LADA}`);
   },
 };
 

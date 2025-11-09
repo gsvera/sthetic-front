@@ -1,5 +1,4 @@
 import BannerHeader from "@/components/WebComponents/BannerHeader";
-import ButtonApp from "@/components/WebComponents/Buttons/ButtonApp";
 import AnimatedImage from "@/components/WebComponents/Image/AnimatedImage";
 import Link from "next/link";
 import { GiCheckMark } from "react-icons/gi";
@@ -114,15 +113,17 @@ export default function AppClient() {
             <div className="col-5 wd-6 content-center-xy m-horizontal-auto">
               <div className="d-wrap content-benefits">
                 <div className="wd-100 content-center m-vertical-20">
-                  <div className="content-img-download-app-disabled img-mob-center">
-                    <Link href="">
+                  <div className="content-img-download-app img-mob-center">
+                    <Link
+                      href="https://play.google.com/store/apps/details?id=com.abasotech.meredithcare&pcampaignid=web_share"
+                      target="_blank"
+                    >
                       <AnimatedImage
                         src="/google-play.avif"
                         alt="Google play"
-                        styles="img-download-app disabled-app"
+                        styles="img-download-app"
                       />
                     </Link>
-                    <div className="next-time">Próximamente</div>
                   </div>
                 </div>
                 <div className="wd-100 content-center m-vertical-20">

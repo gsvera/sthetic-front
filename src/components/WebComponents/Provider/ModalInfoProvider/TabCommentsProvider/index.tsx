@@ -52,7 +52,7 @@ export const TabCommentsProvider = ({
       ) : (
         <>
           {qualification.listComments.length === 0 ? (
-            <div style={{ marginTop: 100 }}>
+            <div>
               <EmptyView message="No ha recibido calificaciones por el momento" />
             </div>
           ) : (

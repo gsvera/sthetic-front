@@ -22,6 +22,27 @@ export const apiProvider = {
       `${BASE_URL_SCHEDULE}/get-ratings-by-provider/${idProvider}`
     );
   },
+  getInfoProvider: function (token) {
+    return axiosInstance.get(
+      `${BASE_URL_SCHEDULE}/share-url/get-info-provider/${token}`
+    );
+  },
+  getTimesCalendarByProvider: function (data) {
+    return axiosInstance.get(
+      `${BASE_URL_SCHEDULE}/calendar/get-time-by-provider/${data.idProvider}?day=${data.day}&date=${data.date}`
+    );
+  },
+  getServicesByProvider: function (idProvider) {
+    return axiosInstance.get(
+      `${BASE_URL_SCHEDULE}/get-services-by-provider/${idProvider}`
+    );
+  },
+  saveScheduleService: function (data) {
+    return axiosInstance.post(
+      `${BASE_URL_SCHEDULE}/make-public-schedule-service`,
+      data
+    );
+  },
 };
 
 export default apiProvider;

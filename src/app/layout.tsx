@@ -3,6 +3,8 @@ import "./globals.css";
 import MenuPage from "@/components/WebComponents/MenuPage";
 import FooterPage from "@/components/WebComponents/FooterPage";
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
+import AlertCookies from "@/components/WebComponents/AlertCookies";
+import { NotificationProvider } from "@/providers/NotificationProvider";
 
 export const metadata: Metadata = {
   title: "Meredith Aesthetic",
@@ -18,10 +20,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={""}>
         <ReactQueryProvider>
-          <MenuPage />
-          {children}
-          <FooterPage />
+          <NotificationProvider>
+            <MenuPage />
+            {children}
+            <FooterPage />
+          </NotificationProvider>
         </ReactQueryProvider>
+        <AlertCookies />
       </body>
     </html>
   );

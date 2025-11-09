@@ -1,0 +1,60 @@
+.option-service-card {
+    @media(max-width: 520px) {
+        width: 100%;
+    }
+    @media(min-width: 520px) {
+        width: 50%;
+    }
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 7px -3px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.08);
+        background-color: var(--accent);
+        box-shadow: 0 0 5px 1px rgba(212, 175, 55, 0.8);
+        .name-service, .number-people, .price-option-service {
+            color: var(--textLight);
+        }
+        .name-service {
+            font-weight: bold;
+        }
+    }
+    .option-service{
+        margin: 0 auto;
+    }
+    .name-service{
+        color: var(--textOre);   
+        font-size: 1.3em;
+        font-family: Outfit;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .row-option-service{
+        display: flex;
+        justify-content: center;
+    }
+    .number-people{
+        color: var(--muted);
+        font-size: 0.9em;
+    }
+    .price-option-service{
+        color: var(--textTitle);
+        font-size: 1.1em;
+        margin-right: 10px;
+    }
+    .btn-option-service{
+        background-color: var(--textTitle);
+        color: var(--textLight);
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 1px solid var(--textTitle);
+        cursor: pointer;
+        margin: 10px auto;
+        width: 100%;
+    }
+}

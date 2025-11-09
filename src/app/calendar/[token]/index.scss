@@ -1,0 +1,242 @@
+.banner-calendar{
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  height: 450px;
+  width: 100%;
+  border-radius: 20px;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.warning-url{
+    color: var(--textLight);
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+.btn-download-app {
+  background-color: var(--accent);  
+  color: var(--textLight);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 15px auto;
+  font-weight: bold;
+  display: flex;
+  font-size: 1.1em;
+  font-family: Outfit;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.08);
+  }
+  @media(min-width: 520px ) {
+    width: 30%;
+  }
+  @media(min-width: 1400px) {
+    width: 20%;
+  }
+}
+.background-img-company {
+    width: 97%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+}
+.content-calendar{
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.8);
+    .advertisement {
+        color: var(--muted);
+        font-family: Outfit;
+        font-size: 1.1em;
+    }
+    .name-provider {
+        font-family: Outfit;
+        color: var(--action);
+    }
+    @media(min-width: 520px) {
+        .row-input {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ant-picker {
+            width: 250px;
+        }
+    }
+    @media(max-width: 520px) {
+        .ant-picker {
+            width: 100%;
+        }
+    }
+    .ant-picker {
+        border: 2px solid var(--accent);
+        padding: 6px;
+        height: 35px;
+        cursor: pointer;
+        input{
+            text-align: center;
+        }
+    }
+    @media(max-width: 520px) {
+        .text-label {
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        .content-value {
+            width: 100%;
+        }
+    }
+    @media(min-width: 520px) {
+        .content-value {
+            width: 250px;
+        }
+    }
+    .text-label{
+        display: flex;
+        align-items: center;
+        color: var(--textTitle);
+        font-weight: bold;
+        font-family: Outfit;
+    }
+    .content-value{
+        border-radius: 5px;
+        border: 2px solid var(--accent);
+        text-align: center;
+        height: 35px;
+        padding: 7px;
+        font-size: 0.9em;
+        cursor: pointer;
+    }
+    .content-value-lada{
+        border-radius: 5px;
+        border: 1px solid var(--accent);
+        text-align: center;
+        height: 35px;
+        padding: 7px;
+        font-size: 0.9em;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    @media(max-width: 920px) {
+        .select-lada {
+            width: 35%;
+            .ant-select {
+                width: 100%  !important;
+            }
+        }
+        .phone-number {
+            width: 60% !important;
+            .content-value {
+                width: 100%;
+            }
+        }
+    }
+    @media(min-width: 520px ) {
+        .select-lada {
+            display: flex;
+            justify-content: end;
+            .ant-select {
+                width: 70% !important;
+            }
+        }
+    }
+    .ant-select {
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        height: 35px;
+        font-size: 0.9em;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    .content-items-times{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .btn-submit-calendar-disabled{
+        background-color: var(--muted);
+        border-radius: 5px;
+        border: none;
+        font-family: Outfit;
+        font-size: 1.2em;
+        padding: 5px 20px;
+        width: 50%;
+        margin: 10px auto;
+        box-shadow: 0 0 5px 1px rgba(141, 141, 141, 0.8);
+        color: var(--textLight);
+    }
+    .btn-submit-calendar{
+        background-color: var(--accent);
+        color: var(--textLight);
+        border-radius: 5px;
+        border: 2px solid var(--accent);
+        font-family: Outfit;
+        font-size: 1.2em;
+        padding: 5px 20px;
+        margin: 10px auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 5px 1px rgba(212, 175, 55, 0.8);
+        &:hover {
+            transform: scale(1.08);
+        }
+        @media(max-width: 520px) {
+            width: 100%;
+        }
+        @media(min-width: 520px) {
+            width: 50%;
+        }
+    }
+}
+.d-flex-calendar{
+    @media(max-width: 520px) {
+        .success-notification {
+            width: 80%;
+            margin: 50px auto;
+        }
+    }
+    @media(min-width: 520px) {
+        display: flex;
+        .success-notification {
+            margin: 60px auto;
+        }
+    }
+    .success-notification{
+        background-color: var(--successNotification);
+        color: var(--textLight);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        transform: scale(1.15);
+        .content-text-success-notification{
+            text-align: center;
+            width: 80%;
+            font-size: 1.2em;
+            .icon-success-notification{
+                margin-bottom: 20px;
+                font-size: 40px;
+            }
+        }
+    }
+    .text-recommendation {
+        text-align: justify;
+        color: var(--muted);
+        margin-top: 15px;
+        font-size: 1.1em;
+        line-height: 1.5;
+    }
+}

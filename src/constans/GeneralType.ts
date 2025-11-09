@@ -1,3 +1,5 @@
+import { STATUS_SERVICE } from "./Constans";
+
 export type AnimationImageType = {
   src: string;
   alt: string;
@@ -53,6 +55,22 @@ export type ProviderType = {
   userLocationDTO: Location;
 }
 
+export type PublicInfoProviderType = {
+  id: string;
+  companyName: string;
+  companyPictureUrl: string;
+  auxState: string;
+  auxMunicipality: string;
+  latitude: number;
+  longitude: number;
+  reference: string;
+}
+
+export type TimeScheduleType = {
+    start: string;
+    end: string
+}
+
 export type ResultPaginated = {
   isLast: boolean;
   items: [];
@@ -98,4 +116,32 @@ export type QualificationType = {
 export type CommentsType = {
   rating: number;
   listComments: Array<QualificationType> | []
+}
+
+export type ScheduleServiceType = {
+    idProviderAux: string;
+    tempNameClient: string;
+    tempLadaClient: string | undefined;
+    tempPhoneClient: string;
+    saveTempClient: boolean;
+    scheduleDate: string;
+    startTime: string;
+    endTime: string;
+    nameService: string;
+    people: number;
+    amount: number;
+    statusService: STATUS_SERVICE;
+}
+
+export type MenuServiceType = {
+    id: number;
+    nameService: string;
+    people: number;
+    price: number;
+}
+
+export type LadaType = {
+  id: number;
+  code: string;
+  lada: string;
 }

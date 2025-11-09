@@ -200,7 +200,10 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="mt-20">
-                      <ButtonKnowMore textBtn="Saber más" href="" />
+                      <ButtonKnowMore
+                        textBtn="Saber más"
+                        href="/app-para-ofrecer-servicios-de-belleza-y-cuidado-personal"
+                      />
                     </div>
                   </div>
                 </div>

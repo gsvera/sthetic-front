@@ -1,0 +1,27 @@
+.option-time {
+    margin: 15px 10px 0;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 7px -3px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.08);
+        background-color: var(--accent);
+        box-shadow: 0 0 5px 1px rgba(212, 175, 55, 0.8);
+        .text-time {
+            color: var(--textLight);
+        }
+    }
+    .option-time-row{
+        .d-flex-time{
+            display: flex;
+            justify-content: center;
+        }
+        .text-time {
+            font-size: 0.9em;
+            align-items: center;
+            display: flex;
+        }
+    }
+}
