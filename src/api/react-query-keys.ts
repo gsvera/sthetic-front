@@ -24,8 +24,8 @@ export const REACT_QUERY_KEYS = {
         getPublicInfoProvider: (key: string) => `public-info-provider-${key}`,
         getTimesProviderToSchedule: (key: string) => `times-provider-to-schedule-${key}`,
         getMenuServicesByProvider: (key: string) => `menu-services-by-provider-${key}`,
-        getproviderToPayMembership: (key: string) => `get-provider-to-pay-membership-${key}`,
-        getSimpleDataProvider: (key: string) => `get-simple-data-provider-${key}`
+        getproviderToPayMembership: (key: string | null) => `get-provider-to-pay-membership-${key}`,
+        getSimpleDataProvider: (key: string | null) => `get-simple-data-provider-${key}`
     },
     stripe: {
         getSessionStripe: (key: string) => `get-session-stripe-${key}`

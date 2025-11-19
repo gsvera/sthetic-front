@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+"use client";
 import apiTypeService from "@/api/catalog";
 import apiProvider from "@/api/provider";
 import { REACT_QUERY_KEYS } from "@/api/react-query-keys";
@@ -21,15 +22,14 @@ import { useNotificationProvider } from "@/providers/NotificationProvider";
 import dayjs from "dayjs";
 import FormButtonApps from "../SubscriptionModule/FormButtonApps";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { useSearchParams, useRouter } from "next/navigation";
 
-type membershipPaymentModuleProps = {
-  userId: string;
-  origin: string | null;
-};
-export const MembershipPaymentModule = ({
-  userId,
-  origin,
-}: membershipPaymentModuleProps) => {
+export const MembershipPaymentModule = () => {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const userId = searchParams.get("userId");
+  const origin = searchParams.get("origin");
+
   const { ErrorNotification } = useNotificationProvider();
   const [sendData, setSendData] = useState(false);
   const [shouldFetch, setShouldFetch] = useState(false);
@@ -126,6 +126,19 @@ export const MembershipPaymentModule = ({
       setShouldFetch(false);
     };
   }, [coupon]);
+
+  useEffect(() => {
+    if (!userId) {
+      router.push("/");
+    }
+  }, [userId, router]);
+
+  if (!userId)
+    return (
+      <div className="conent-loading-height">
+        <LoadingView />
+      </div>
+    );
 
   const makePayment = () => {
     if (userInfo) {
