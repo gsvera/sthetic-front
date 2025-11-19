@@ -26,7 +26,7 @@ export default function Home() {
       <main className={styles.main}>
         <BannerHeader
           bannerStyle="background-home"
-          slogan="La aplicación que conecta a clientes con profesionales de la belleza y cuidado personal"
+          slogan="Conecta clientes con profesionales de la belleza con pocos clics"
           child={buttonApps}
         />
 
@@ -34,8 +34,8 @@ export default function Home() {
           <p className="title mb-3">Bienvenido a Meredith Aesthetic</p>
           <div className="wd-6 wd-mob-9 m-horizontal-auto">
             <p className="text-center line-height-m t-secondary text-size-m">
-              El software donde puedes encontrar y ofrecer servicios de
-              estética, belleza y cuidado personal de forma rápida, segura y
+              La plataforma donde puedes encontrar y ofrecer servicios de
+              estética, belleza y cuidado personal de manera rápida, segura y
               profesional.
             </p>
           </div>
@@ -53,20 +53,25 @@ export default function Home() {
               <h2 className="mb-3 t-outfit c-action">¿Quiénes somos?</h2>
               <p className="text-subtitle mb-3">Calidad de estilo y belleza</p>
               <p className="text-paragraph line-height-m t-secondary ">
-                Nuestra plataforma conecta a clientes que buscan especialistas
-                con profesionales de la belleza que desean dar a conocer su
-                trabajo y atraer nuevos clientes.
+                Nuestra plataforma conecta a quienes buscan experiencias de
+                belleza excepcionales con profesionales talentosos que desean
+                destacar su trabajo, impulsar su presencia y atraer nuevos
+                clientes. Creamos un espacio confiable, moderno y elegante donde
+                cada especialista puede mostrar lo mejor de su talento y cada
+                cliente encuentra exactamente lo que necesita.
               </p>
               <ul className="list-style-one">
                 <li>
-                  <GiCheckMark className="check-list" /> Cerca de ti
+                  <GiCheckMark className="check-list" /> Encuentra profesionales
+                  cerca de ti
                 </li>
                 <li>
-                  <GiCheckMark className="check-list" /> Reserva tu cita
+                  <GiCheckMark className="check-list" /> Reserva tu cita de
+                  forma rápida y segura
                 </li>
                 <li>
-                  <GiCheckMark className="check-list" /> Visualiza su trabajo y
-                  recomendaciones
+                  <GiCheckMark className="check-list" /> Explora su trabajo,
+                  valoraciones y recomendaciones
                 </li>
               </ul>
             </div>
@@ -88,9 +93,11 @@ export default function Home() {
                 </div>
                 <div className="col-benefits content-text-benefits">
                   <div>
-                    <p className="title-benefits mb-3">Si eres cliente</p>
+                    <p className="title-benefits mb-3">
+                      Para ti que eres cliente
+                    </p>
                     <h2 className="subtitle-benefits">
-                      ENCUENTRA Y ELIGE EL MEJOR ESPECIALISTA QUE DESEAS
+                      RESERVA LOS MEJORES ESPECIALISTAS EN MINUTOS
                     </h2>
                     <div className="d-flex mt-5">
                       <div>
@@ -98,8 +105,9 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-benefits">
-                          Encuentra salones de belleza, barberías, lashistas,
-                          podólogos y especialistas en estética cerca de ti.
+                          Encuentra especialistas de belleza cerca de ti y
+                          descubre servicios como faciales, masajes, manicure,
+                          depilación láser y más.
                         </p>
                       </div>
                     </div>
@@ -109,37 +117,15 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-benefits">
-                          Explora servicios como manicure, pedicure, faciales,
-                          masajes, depilación láser, tratamientos corporales,
-                          maquillaje profesional y mucho más.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="d-flex mt-5">
-                      <div>
-                        <GiCheckMark className="check-option" />
-                      </div>
-                      <div>
-                        <p className="text-benefits">
-                          Filtra por ubicación, especialidad, precio y reseñas
-                          de otros usuarios.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="d-flex mt-5">
-                      <div>
-                        <GiCheckMark className="check-option" />
-                      </div>
-                      <div>
-                        <p className="text-benefits">
-                          Reserva fácilmente tu cita en línea y mejora tu
-                          experiencia de belleza y bienestar.
+                          Filtra por ubicación, precio y valoraciones, y reserva
+                          tu cita en segundos para vivir una experiencia de
+                          belleza y bienestar a tu medida.
                         </p>
                       </div>
                     </div>
                     <div className="mt-20">
                       <ButtonKnowMore
-                        textBtn="Saber más"
+                        textBtn="Empieza gratis"
                         href="/app-para-buscar-profesionales-de-la-belleza"
                       />
                     </div>
@@ -161,9 +147,8 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-benefits">
-                          Crea tu perfil y promociona tus servicios de estética,
-                          peluquería, barbería o terapias de bienestar, entre
-                          otros.
+                          Crea tu perfil profesional y promociona tus servicios
+                          de belleza, barbería o bienestar.
                         </p>
                       </div>
                     </div>
@@ -173,8 +158,8 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-benefits">
-                          Muestra fotos de tu trabajo, lista tus precios y
-                          recibe reseñas de clientes satisfechos.
+                          Comparte fotos de tu trabajo, muestra tus precios y
+                          recibe valoraciones de tus clientes.
                         </p>
                       </div>
                     </div>
@@ -184,8 +169,8 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-benefits">
-                          Consigue mayor visibilidad y nuevos clientes sin
-                          invertir en publicidad costosa.
+                          Aumenta tu visibilidad y atrae nuevos clientes sin
+                          invertir en publicidad.
                         </p>
                       </div>
                     </div>
@@ -195,13 +180,14 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-benefits">
-                          Administra tus citas y mantén el control de tu agenda.
+                          Gestiona tus citas y mantén el control total de tu
+                          agenda.
                         </p>
                       </div>
                     </div>
                     <div className="mt-20">
                       <ButtonKnowMore
-                        textBtn="Saber más"
+                        textBtn="Empieza a ganar más con Meredith"
                         href="/app-para-ofrecer-servicios-de-belleza-y-cuidado-personal"
                       />
                     </div>
@@ -291,7 +277,8 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-selection">
-                    Amplia red de profesionales de la estética y la belleza.
+                    Una red creciente de profesionales de la estética y la
+                    belleza, listos para ti.
                   </p>
                 </div>
               </div>
@@ -302,7 +289,8 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-selection">
-                    Comparte y recibe reseñas reales para elegir con confianza.
+                    Comparte y descubre reseñas auténticas para elegir con total
+                    confianza.
                   </p>
                 </div>
               </div>
@@ -313,7 +301,8 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-selection">
-                    Agenda y organiza tus servicios desde un solo lugar.
+                    Agenda, organiza y gestiona tus servicios desde un solo
+                    lugar.
                   </p>
                 </div>
               </div>
@@ -324,8 +313,8 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-selection">
-                    Una comunidad enfocada en resaltar la belleza y el bienestar
-                    personal.
+                    Una comunidad dedicada a resaltar la belleza, el bienestar y
+                    el cuidado personal.
                   </p>
                 </div>
               </div>
@@ -336,9 +325,9 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-selection">
-                    Ya sea que quieras encontrar al mejor especialista cerca de
-                    ti o registrarte como profesional de la estética, en
-                    Meredith Aesthetic lo tienes todo en un solo lugar.
+                    Ya sea que busques al mejor especialista cerca de ti o
+                    desees registrarte como profesional, en Meredith Aesthetic
+                    encuentras todo en un solo lugar.
                   </p>
                 </div>
               </div>

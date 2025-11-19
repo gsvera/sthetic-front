@@ -8,6 +8,12 @@ export const REACT_QUERY_KEYS = {
         },
         lada: {
             getAll: (key: string) => `get-all-lada-${key}`
+        },
+        plan: {
+            getAll: (key: string) => `get-all-plan-${key}`
+        },
+        coupon: {
+            getByCode: (key: string) => `get-coupon-by-code-${key}`
         }
     },
     provider: {
@@ -17,6 +23,11 @@ export const REACT_QUERY_KEYS = {
         getRatingsByProvider: (key: string) => `provider-get-ratings-by-provider-${key}`,
         getPublicInfoProvider: (key: string) => `public-info-provider-${key}`,
         getTimesProviderToSchedule: (key: string) => `times-provider-to-schedule-${key}`,
-        getMenuServicesByProvider: (key: string) => `menu-services-by-provider-${key}`
+        getMenuServicesByProvider: (key: string) => `menu-services-by-provider-${key}`,
+        getproviderToPayMembership: (key: string) => `get-provider-to-pay-membership-${key}`,
+        getSimpleDataProvider: (key: string) => `get-simple-data-provider-${key}`
+    },
+    stripe: {
+        getSessionStripe: (key: string) => `get-session-stripe-${key}`
     }
 }

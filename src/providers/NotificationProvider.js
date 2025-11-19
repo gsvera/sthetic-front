@@ -14,11 +14,24 @@ export default function NotificationProvider({ children }) {
       description: "Ocurrió un error inesperado, por favor intentelo más tarde",
       showProgress: true,
       pauseOnHover: true,
+      className: "error-notification",
+    });
+  };
+
+  const WarningNotification = (message, description) => {
+    api.open({
+      message,
+      description,
+      showProgress: true,
+      pauseOnHover: true,
+      className: "warning-notification",
     });
   };
 
   return (
-    <NotificationContext.Provider value={{ ErrorNotification }}>
+    <NotificationContext.Provider
+      value={{ ErrorNotification, WarningNotification }}
+    >
       {children}
       {contextHolder}
     </NotificationContext.Provider>

@@ -215,7 +215,6 @@
     .success-notification{
         background-color: var(--successNotification);
         color: var(--textLight);
-        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -226,6 +225,7 @@
             text-align: center;
             width: 80%;
             font-size: 1.2em;
+            font-family: Outfit;
             .icon-success-notification{
                 margin-bottom: 20px;
                 font-size: 40px;

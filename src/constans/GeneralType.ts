@@ -1,4 +1,4 @@
-import { STATUS_SERVICE } from "./Constans";
+import { STATUS_PAYMENT, STATUS_SERVICE } from "./Constans";
 
 export type AnimationImageType = {
   src: string;
@@ -144,4 +144,75 @@ export type LadaType = {
   id: number;
   code: string;
   lada: string;
+}
+
+type BenefitsPlan = {
+  id: number;
+  descriptionEs: string;
+};
+
+export type PlanCardProps = {
+  id: number;
+  name: string;
+  price: number;
+  duration: number;
+  planDetails: BenefitsPlan[];
+  onSelectPlan: (plan: PlanCardProps) => void;
+};
+
+export type CheckoutSessionStripeType = {
+  name: string;
+  email: string;
+  amount: number;
+  jsonData: string;
+  origin: string;
+  userId?: string
+}
+
+export type SessionStripe = {
+  checkoutUrl: string;
+  sessionId: string;
+}
+
+export type CouponType = {
+  id: number;
+  code: string;
+  discountAmount: number;
+}
+
+export type ResponsePaymentCheckoutType = {
+  id: number;
+  createdAt: string;
+  origin: string;
+  sessionId: string;
+  statusPayment: string;
+  userId?: STATUS_PAYMENT;
+}
+
+export type CatalogPlanDTO = {
+    id: number;
+    active: boolean;
+    name: string;
+    duration: number;
+    price: number;
+}
+
+export type UserPlan = {
+    id: number;
+    idUser: string;
+    createdData: string;
+    duration: number;
+    startDate: string;
+    endDate: string;
+    isActive: boolean;
+    catalogPlanDTO: CatalogPlanDTO;
+}
+
+export type UserSimpleDataType = {
+  id: string;
+  firstName: string,
+  lastName: string;
+  email: string;
+  lada: string;
+  phone: string;
 }

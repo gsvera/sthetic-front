@@ -43,6 +43,31 @@ export const apiProvider = {
       data
     );
   },
+  saveUser: function (data) {
+    return axiosInstance.post(`${BASE_URL}/save/user-sthetic-work`, data);
+  },
+  createCheckoutSession: function (data) {
+    return axiosInstance.post(`${BASE_URL}/create-checkout-session`, data);
+  },
+  getSessionStripe: function (sessionId) {
+    return axiosInstance.get(
+      `${BASE_URL}/verify-payment-stripe?session-id=${sessionId}`
+    );
+  },
+  findDuplicatedUser: function (email, phone) {
+    return axiosInstance.get(
+      `${BASE_URL}/find-duplicated-user?email=${email}&phone=${phone}`
+    );
+  },
+  getSimpleDataByprovider: function (userId) {
+    return axiosInstance.get(`${BASE_URL}/get-simple-data-provider/${userId}`);
+  },
+  getPlanByUser: function (userId) {
+    return axiosInstance.get(`${BASE_URL}/get-my-current-plan/${userId}`);
+  },
+  savePayStripe: function (data) {
+    return axiosInstance.post(`${BASE_URL}/save-pay-stripe`, data);
+  },
 };
 
 export default apiProvider;

@@ -62,7 +62,7 @@ export const ScheduleDate = ({ token }: scheduleProps) => {
     mutationFn: (data: ScheduleServiceType) =>
       apiProvider.saveScheduleService(data),
     onSuccess: (data: ResponseApi) => handleSuccessPublicSchedule(data.data),
-    onError: (err) => handleErrorPublicSchedule(),
+    onError: (err) => handleErrorPublicSchedule(err),
   });
 
   const handleSuccessPublicSchedule = (data: ObjectResponse) => {
@@ -70,7 +70,7 @@ export const ScheduleDate = ({ token }: scheduleProps) => {
     setShowSuccessNotification(true);
   };
 
-  const handleErrorPublicSchedule = () => {
+  const handleErrorPublicSchedule = (err: any) => {
     ErrorNotification();
   };
 

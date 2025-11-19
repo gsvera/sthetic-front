@@ -31,12 +31,12 @@ export const CardTypeServices = ({
         <h3 className="title-card-services">{titleCard}</h3>
         <div className="content-text-card-services">
           <p className="description-card-services">{descriptionCard}</p>
-          <div className="content-view-more">
+          {/* <div className="content-view-more">
             <a href={href} className="view-more">
               Ver más
               <FaArrowRightLong style={{ marginLeft: "5px" }} />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

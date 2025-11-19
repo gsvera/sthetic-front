@@ -16,6 +16,21 @@ export const REGEX = {
     ONLY_TEXT: /^[a-zA-ZáéíóúüÁÉÍÓÚÜñÑ\s]+$/ ,
     ONLY_NUMBER: /^\d+$/ ,  
     ONLY_NUMBER_PRICE: /^[+-]?(\d+([.,]\d*)?|[.,]\d+)$/ ,
-    PASSWORD: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/ ,
+    PASSWORD: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/ ,
     EMAIL: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+}
+
+export enum PAYMENT_TYPE {
+    FREE = 'Free coupon',
+    STRIPE = 'Stripe'
+}
+
+export enum PLATFORM_TYPE {
+    IOS = 'ios',
+    ANDROID = 'android'
+}
+
+export enum STATUS_PAYMENT {
+    PENDING = 'pending',
+    COMPLETED = 'completed'
 }

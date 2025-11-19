@@ -1,4 +1,19 @@
 import dayjs from "dayjs";
+import CryptoJS from "crypto-js";
+
+const secretKeyPass = process.env.NEXT_PUBLIC_SECRET_KEY;
+const nameAppWork = process.env.NEXT_PUBLIC_APP_WORK_MOBILE;
+const iosIdApp = process.env.NEXT_PUBLIC_IOS_ID_APP;
+
+export const getNameAppWork = () => {
+  const ua = navigator.userAgent.toLowerCase();
+  window.location.href = `${nameAppWork}://login`;
+  setTimeout(() => {
+    if (/iphone|ipad|ipod/.test(ua)) {
+        window.location.href = `https://apps.apple.com/app/${iosIdApp}`;
+      }      
+    }, 1500);
+}
 
 /**
  * Convierte un valor numerico a formato de moneda, @param digits hace referencia al numero de digitos a utilizar por default es 2
@@ -49,3 +64,24 @@ export const disablePastDates = (current:any) => {
 export const convertHourToAMorPM = (hour: string | undefined) => {
   if(hour) return dayjs(hour, "HH:mm").format("hh:mm A");
 }
+
+/**
+ * Funcion para encryptar el password para antes de enviarlo a cual quier peticion de servicios, el @param secretKeyPass debe ser el mismo que el de back
+ * @param text 
+ * @returns 
+ */
+export const parsePasswordEncrypt = (text:string) => {
+  if(!secretKeyPass) {
+    throw new Error("Secret key is not defined");
+  }
+  
+  const key = CryptoJS.enc.Utf8.parse(secretKeyPass);
+
+  // Cifrar el texto
+  const encrypted = CryptoJS.AES.encrypt(text, key, {
+    mode: CryptoJS.mode.ECB,
+    padding: CryptoJS.pad.Pkcs7,
+  });
+
+  return encrypted.toString();
+};

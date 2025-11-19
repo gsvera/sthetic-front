@@ -22,18 +22,18 @@ export default function AppWorker() {
   return (
     <div>
       <BannerHeader
-        slogan="Administra tus citas y adquiere nuevos clientes"
+        slogan="Gestiona tus citas con facilidad y atrae nuevos clientes a tu negocio."
         bannerStyle="background-work"
       />
       <div className="container-body">
         <div className="container-message-principal">
           <h2 className="title">
-            Descarga la mejor app para administrar tus citas y ser más visible
-            para nuevos clientes
+            Descarga la mejor app para administrar tus citas y aumentar tu
+            visibilidad para atraer nuevos clientes.
           </h2>
           <p className="text-center line-height-m t-secondary text-size-m mt-50">
-            Administrar las citas de tus clientes y adquirir nuevos clientes
-            todo en una sola app
+            Administra las citas de tus clientes y atrae nuevos prospectos, todo
+            desde una sola app.
           </p>
         </div>
       </div>
@@ -57,15 +57,15 @@ export default function AppWorker() {
                   SENCILLA
                 </h2>
                 <p className="mt-5 text-benefits">
-                  Con Meredith Aesthetic puedes administrar las citas de tus
-                  clientes y alcanzar a ser más visible y poder captar nuevos
-                  clientes, asi como tu te esfuerzas a dar un servicio de
-                  calidad a tus clientes, nosotros nos esforzamos en darte una
-                  mejor calidad de nuestro software para facilitar esas tareas
-                  que pudieran llegar a ser tediosas y asi tu te enfoques mas en
-                  tu servicio al cliente.{" "}
+                  Con Meredith Aesthetic puedes gestionar fácilmente las citas
+                  de tus clientes, aumentar tu visibilidad y atraer nuevas
+                  oportunidades. Así como tú te esfuerzas en brindar un servicio
+                  de calidad, nosotros trabajamos para ofrecerte una plataforma
+                  confiable, moderna y eficiente que simplifica las tareas más
+                  tediosas, permitiéndote enfocarte en lo que realmente importa:
+                  tus clientes. Ahora bien…
                   <span className="text-bold">
-                    ¿Cuáles son los beneficios de adquirir nuestra app?
+                    ¿cuáles son los beneficios de adquirir nuestra app?
                   </span>
                 </p>
                 <div className="d-flex mt-5">
@@ -74,7 +74,8 @@ export default function AppWorker() {
                   </div>
                   <div>
                     <p className="text-benefits-dark">
-                      Administra las citas de tus clientes
+                      Administra las citas de tus clientes de forma fácil y
+                      organizada.
                     </p>
                   </div>
                 </div>
@@ -84,7 +85,7 @@ export default function AppWorker() {
                   </div>
                   <div>
                     <p className="text-benefits-dark">
-                      Ser más visible para nuevos clientes
+                      Aumenta tu visibilidad y llega a nuevos clientes.
                     </p>
                   </div>
                 </div>
@@ -94,7 +95,7 @@ export default function AppWorker() {
                   </div>
                   <div>
                     <p className="text-benefits-dark">
-                      Tú administras tus propios precios
+                      Controla y ajusta tus propios precios cuando lo necesites.
                     </p>
                   </div>
                 </div>
@@ -104,7 +105,8 @@ export default function AppWorker() {
                   </div>
                   <div>
                     <p className="text-benefits-dark">
-                      Notificaciones en tiempo real de citas de nuevos clientes
+                      Recibe notificaciones en tiempo real cada vez que un nuevo
+                      cliente agende contigo.
                     </p>
                   </div>
                 </div>
@@ -117,7 +119,7 @@ export default function AppWorker() {
       <div className="container-body">
         <div>
           <p className="text-center subtitle">
-            Descarga la app de trabajo en las tiendas oficiales
+            Descarga la app para profesionales desde las tiendas oficiales.
           </p>
           <div className="grid-space-between content-center wd-7 m-horizontal-auto">
             <div className="col-5 d-flex content-center mty-50">
@@ -144,15 +146,19 @@ export default function AppWorker() {
                   </Link>
                 </div>
                 <div className="wd-100 content-center m-vertical-20 ">
-                  <div className="content-img-download-app-disabled img-mob-center">
-                    <Link href={""}>
+                  <div className="content-img-download-app img-mob-center">
+                    <Link
+                      href={
+                        "https://apps.apple.com/mx/app/meredith-aesthetic-work/id6754846887"
+                      }
+                      target="_blank"
+                    >
                       <AnimatedImage
                         src="/app-store.avif"
                         alt="App Store"
-                        styles="img-download-app disabled-app"
+                        styles="img-download-app"
                       />
                     </Link>
-                    <div className="next-time">Próximamente</div>
                   </div>
                 </div>
               </div>

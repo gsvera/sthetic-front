@@ -1,12 +1,34 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import styles from "@/app/page.module.css";
 import Link from "next/link";
 import { LuMenu } from "react-icons/lu";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./index.scss";
 
 export const MenuPage = () => {
   const [showMenuMobile, setShowMenuMobile] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: any) {
+      if (
+        showMenuMobile &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
+        setShowMenuMobile(false);
+      }
+    }
+
+    // Escuchar clicks globales
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Limpiar
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showMenuMobile]);
 
   return (
     <div className={`menu-mer`}>
@@ -29,6 +51,7 @@ export const MenuPage = () => {
           </div>
         </div>
         <div
+          ref={menuRef}
           className={`${
             showMenuMobile ? "menu-mobile-items" : "d-only-desktop menu-desktop"
           }`}

@@ -1,0 +1,125 @@
+.membership-payment-module {
+    .background-general-img, .banner-shadow-general {
+        height: 300px !important;
+    }
+    .card-subcribe-module {
+        border-radius: 10px;
+        box-shadow: 0 0 11px -3px rgba(0, 0, 0, 0.7);
+        margin: 10px auto;
+        padding: 15px 20px;
+    }
+    .form-pay{
+        margin: 25px auto;
+        @media(max-width: 520px) {
+            width: 95%;
+        }
+        @media(min-width: 520px) {
+            width: 60%;
+        }
+        .title-form {
+            font-weight: bold;
+            font-family: Outfit;
+            color: var(--action);
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .label-form-pay {
+            color:var(--textLabels);
+            font-weight: bold;
+            font-family: Outfit;
+            font-size: 1.1em;
+        }
+        .value-form-pay {
+            color: var(--action);
+            font-weight: bold;
+            font-family: Outfit;
+            font-size: 1.1em;
+        }
+        .text-error {
+            font-size: 0.8em;
+        }
+    }
+    
+    @media(max-width: 520px) {
+        .btn-submit {
+            width: 100%;
+            margin: 5px 0
+        }
+        .content-btn-b-n{
+            margin-top: 20px;
+        }
+    }
+    @media(min-width: 520px) {
+        .btn-submit  {
+            margin: 20px auto;
+            width: 60%;
+        }
+        .content-btn-b-n{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .btn-submit {        
+        background-color: var(--accent);
+        color: var(--textLight);
+        font-weight: bold;
+        transition: transform 0.3s ease;
+        padding: 15px;
+        &:hover {
+            border-color: var(--accent) !important;
+            background-color: var(--accent) !important;
+            color: var(--textLight) !important;
+            font-weight: bold;
+            transform: scale(1.1);
+        }
+    }
+    .btn-submit-disable {
+        @media(max-width: 520px) {
+            width: 100%;
+        }
+        @media(min-width: 520px) {
+            width: 60%;
+        }
+        margin: 20px auto;
+        background-color: var(--muted);
+        color: var(--textLight);
+        font-weight: bold;
+        padding: 15px;
+    }
+    .success-pay {
+        @media(max-width: 520px) {
+            width: 90%;
+            height: 150px;
+        }
+        @media(min-width: 520px) {
+            width: 40%;
+            height: 200px;            
+        }
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+        background-color: var(--successNotification);
+        color: var(--textLight);
+        font-family: Outfit;
+        padding: 30px;
+        margin: 10px auto;
+        border-radius: 10px;
+        .icon-success-notification{
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        .text-success{
+            font-size: 1.2em;
+        }
+        
+    }
+    @media(max-width: 520px) {
+        .form-button-apps{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            a {
+                text-align: center;
+            }
+        }
+    }
+}

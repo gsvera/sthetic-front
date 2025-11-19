@@ -284,15 +284,13 @@ a {
 .d-flex {
   display: flex;
 }
+.f-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .flex-end{
   display: flex;
   justify-content: end;
-}
-@media(min-width: 520px) {
-  .content-center {
-    display: flex;
-    justify-content: center;
-  }
 }
 .content-space-between {
   display: flex;
@@ -301,6 +299,16 @@ a {
 .espacebetween {
   display: flex;
   justify-content: space-around;
+}
+@media(min-width: 520px) {
+  .content-center {
+    display: flex;
+    justify-content: center;
+  }
+  .content-row-input {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media(max-width: 520px) {
   .content-center-mob {
@@ -311,7 +319,7 @@ a {
     display: flex;
     justify-content: space-between;
   }
-  .col-5, .col-4 {
+  .col-5, .col-4, .col-4-8, .col-alone {
     width: 90%;
     margin: 0 auto;
   }
@@ -338,6 +346,9 @@ a {
   }
   .col-4 {
     width: 45%;
+  }
+  .col-4-8 {
+    width: 48%;
   }
   .img-home-somos {
     border-radius: 10px;
@@ -1218,8 +1229,11 @@ a {
   color: var(--accent);
   margin-right: 5px;
 }
-.ant-notification-notice{
-  background-color: var(--dangerColor);
+.error-notification{
+  background-color: var(--errorNotification);
+}
+.warning-notification {
+ background-color: var(--accentReverse); 
 }
 .ant-notification-notice-message {
   font-size: 1.2em !important;
@@ -1228,4 +1242,63 @@ a {
 .ant-notification-notice-message, .ant-notification-notice-description {
   color: var(--textLight) !important;
   font-family: Outfit;
+}
+@media(min-width: 520px) {
+  .background-general-img, .banner-shadow-general {
+    height: 600px;
+  }
+}
+@media(max-width: 520px) {
+  .background-general-img, .banner-shadow-general {
+    height: 450px;
+  }
+}
+.background-general-img {
+    width: 97%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+}
+.banner-shadow-general{
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  width: 100%;
+  border-radius: 20px;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-button-apps {
+    @media(max-width: 520px) {
+        .img-download-app {
+            width: 100%;
+        }
+    }
+    @media(min-width: 520px) {
+        display: flex;
+        justify-content: center;
+        .mrbtnapp {
+            margin-right: 20px;
+        }
+    }
+    margin-top: 30px;
+}
+.text-help {
+  color: var(--textLight);
+  font-family: Outfit;
+  margin-top: 20px;
+  text-align: justify;
+}
+.conent-loading-height{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
