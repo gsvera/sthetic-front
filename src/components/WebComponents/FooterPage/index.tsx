@@ -19,14 +19,14 @@ export const FooterPage = () => {
           <div className="mty-1 content-center">
             <ButtonKnowMore
               textBtn="App cliente"
-              href="/app-para-buscar-profesionales-de-la-belleza"
+              href="/buscar-profesionales-belleza"
               styles="know-more-footer"
             />
           </div>
           <div className="mty-1 content-center">
             <ButtonKnowMore
               textBtn="App trabajo"
-              href="/app-para-ofrecer-servicios-de-belleza-y-cuidado-personal"
+              href="/ofrecer-servicios-belleza"
               styles="know-more-footer"
             />
           </div>

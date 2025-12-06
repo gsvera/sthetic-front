@@ -1,24 +1,22 @@
-"use client";
-import { REACT_QUERY_KEYS } from "@/api/react-query-keys";
 import BannerHeader from "@/components/WebComponents/BannerHeader";
 import AnimatedImage from "@/components/WebComponents/Image/AnimatedImage";
-import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import { GiCheckMark } from "react-icons/gi";
-import { apiTypeService } from "@/api/catalog/";
-import { ResponseApi } from "@/api/responseApi";
-import { TypeServiceType } from "@/constans/GeneralType";
-import { TypeServiceCard } from "@/components/WebComponents/TypeServiceCard";
+import { Metadata } from "next";
+import ListTypeServices from "@/components/WebComponents/ListTypeServices";
+
+export const metadata: Metadata = {
+  title: "Ofrecer Servicios de Belleza | Únete como Profesional",
+  description:
+    "Regístrate como profesional de belleza y aumenta tu cartera de clientes. Publica tus servicios, gestiona tu agenda y recibe pagos de forma segura.",
+  keywords:
+    "ofrecer servicios de belleza, registrar profesional de belleza, app para profesionales de belleza, publicar servicios de estética, captar clientes de belleza, plataforma para profesionales de belleza",
+  alternates: {
+    canonical: "https://meredith-aesthetic.com/ofrecer-servicios-belleza",
+  },
+};
 
 export default function AppWorker() {
-  const { data: listTypeService = [] } = useQuery({
-    queryKey: [REACT_QUERY_KEYS.catalog.getTypeServices("types-services")],
-    queryFn: () => apiTypeService.getAll(),
-    ...{
-      select: (data: ResponseApi) => data.data.items as TypeServiceType[],
-    },
-  });
-
   return (
     <div>
       <BannerHeader
@@ -178,17 +176,7 @@ export default function AppWorker() {
           </p>
         </div>
         <div className="content-type-service-card">
-          {listTypeService.length > 0
-            ? listTypeService?.map((item: TypeServiceType) => (
-                <TypeServiceCard
-                  key={item.id}
-                  id={item.id}
-                  icon={item.icon}
-                  typeServiceNameEs={item.typeServiceNameEs}
-                  descriptionEs={item.typeServiceNameEs}
-                />
-              ))
-            : ""}
+          <ListTypeServices />
         </div>
       </div>
     </div>

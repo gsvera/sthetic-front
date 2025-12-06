@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const axiosInstance = axios.create({
   headers: { "Content-Type": "application/json" },
-  baseURL: `/api/esthetic`,
+  baseURL: `${process.env.NEXT_PUBLIC_URL_API}/api/esthetic`,
 });
 
 // axios.defaults.withCredentials = true;

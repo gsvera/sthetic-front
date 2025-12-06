@@ -227,7 +227,7 @@ export const ScheduleDate = ({ token }: scheduleProps) => {
             >
               <Link
                 className="btn-download-app"
-                href="/app-para-buscar-profesionales-de-la-belleza"
+                href="/buscar-profesionales-belleza"
               >
                 Descarga app cliente
               </Link>
@@ -437,7 +437,7 @@ export const ScheduleDate = ({ token }: scheduleProps) => {
             <div className="mt-20 content-center">
               <ButtonKnowMore
                 textBtn="Saber más"
-                href="/app-para-buscar-profesionales-de-la-belleza"
+                href="/buscar-profesionales-belleza"
               />
             </div>
           </div>

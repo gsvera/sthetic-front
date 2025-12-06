@@ -1,7 +1,19 @@
 import BannerHeader from "@/components/WebComponents/BannerHeader";
 import AnimatedImage from "@/components/WebComponents/Image/AnimatedImage";
+import { Metadata } from "next";
 import Link from "next/link";
 import { GiCheckMark } from "react-icons/gi";
+
+export const metadata: Metadata = {
+  title: "Buscar Profesionales de Belleza | Agenda Servicios Cerca de Ti",
+  description:
+    "Encuentra profesionales de belleza verificados y agenda servicios como manicure, maquillaje, barbería, masajes y más. Busca por ubicación, precio y disponibilidad en tiempo real.",
+  keywords:
+    "profesionales de belleza cerca, profesionales de estética, especialistas en belleza, búsqueda de servicios de belleza, encontrar expertos de belleza",
+  alternates: {
+    canonical: "https://meredith-aesthetic.com/buscar-profesional-belleza",
+  },
+};
 
 export default function AppClient() {
   return (

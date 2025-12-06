@@ -19,7 +19,7 @@ import { FiArrowRight } from "react-icons/fi";
 import ButtonPagination from "@/components/WebComponents/Buttons/ButtonPagination";
 import ModalInfoProvider from "@/components/WebComponents/Provider/ModalInfoProvider";
 
-export default function FindWorker() {
+export default function SearchWorkers() {
   const [showModalInfo, setShowModalInfo] = useState(false);
   const [idProvider, setIdProvider] = useState("");
   const [pageParams, setPageParams] = useState({

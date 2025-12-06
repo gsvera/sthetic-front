@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import { FaCheck } from "react-icons/fa6";
+
+export const metadata: Metadata = {
+  robots: "noindex,nofollow",
+};
 
 export default function Help() {
   return (

@@ -6,17 +6,29 @@ import AnimatedImage from "@/components/WebComponents/Image/AnimatedImage";
 import CardTypeServices from "@/components/WebComponents/CardTypeServices";
 import { GiCheckMark } from "react-icons/gi";
 import ButtonKnowMore from "@/components/WebComponents/Buttons/ButtonKnowMore";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Profesionales de Belleza Cerca de Ti | Meredith Aesthetic",
+  description:
+    "Encuentra y agenda servicios de belleza con expertos verificados en tu ciudad. Manicure, barbería, maquillaje, masajes y mucho más.",
+  keywords:
+    "expertos de belleza cerca, servicios de estética, servicios de uñas, maquillaje, masajes, agenda servicios de belleza, profesionales verificados belleza",
+  alternates: {
+    canonical: "https://meredith-aesthetic.com",
+  },
+};
 
 export default function Home() {
   const buttonApps = (
     <div className="content-btn-app">
       <ButtonApp
         textBtn="App para cliente"
-        href="/app-para-buscar-profesionales-de-la-belleza"
+        href="/buscar-profesionales-belleza"
       />
       <ButtonApp
         textBtn="App para dar servicio"
-        href="/app-para-ofrecer-servicios-de-belleza-y-cuidado-personal"
+        href="/ofrecer-servicios-belleza"
       />
     </div>
   );
@@ -126,7 +138,7 @@ export default function Home() {
                     <div className="mt-20">
                       <ButtonKnowMore
                         textBtn="Empieza gratis"
-                        href="/app-para-buscar-profesionales-de-la-belleza"
+                        href="/buscar-profesionales-belleza"
                       />
                     </div>
                   </div>
@@ -188,7 +200,7 @@ export default function Home() {
                     <div className="mt-20">
                       <ButtonKnowMore
                         textBtn="Empieza a ganar más con Meredith"
-                        href="/app-para-ofrecer-servicios-de-belleza-y-cuidado-personal"
+                        href="/ofrecer-servicios-belleza"
                       />
                     </div>
                   </div>

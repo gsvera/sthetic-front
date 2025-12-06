@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/:path*", // 👈 el comodín es esencial
-        destination: "http://localhost:8002/api/:path*", // backend real
+        destination: "https://meredith-aesthetic.com/api/:path*", // backend real
       },
     ];
   },

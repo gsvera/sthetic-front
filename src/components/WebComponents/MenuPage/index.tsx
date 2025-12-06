@@ -65,28 +65,26 @@ export const MenuPage = () => {
           >
             <div className="text-menu">
               <Link
-                href={"/encuentra-profesionales-de-la-belleza"}
+                href={"/encuentra-profesionales-belleza"}
                 onClick={() => setShowMenuMobile(false)}
               >
-                Encuentra a un profesionistas
+                Encuentra profesionales
               </Link>
             </div>
             <div className="text-menu">
               <Link
-                href={"/app-para-buscar-profesionales-de-la-belleza"}
+                href={"/buscar-profesionales-belleza"}
                 onClick={() => setShowMenuMobile(false)}
               >
-                Quiero ser cliente
+                Necesito un servicio
               </Link>
             </div>
             <div className="text-menu">
               <Link
-                href={
-                  "/app-para-ofrecer-servicios-de-belleza-y-cuidado-personal"
-                }
+                href={"/ofrecer-servicios-belleza"}
                 onClick={() => setShowMenuMobile(false)}
               >
-                Quiero ofrecer mis servicios
+                Quiero ofrecer servicios
               </Link>
             </div>
           </div>

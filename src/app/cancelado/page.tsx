@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: "noindex,nofollow",
+};
+
 export default async function Cancel() {
   return (
     <div className="view-cancel">
