@@ -1,4 +1,3 @@
-"use client";
 import LoadingView from "@/components/WebComponents/LoadingView";
 import MembershipPaymentModule from "@/components/WebComponents/MembershipPaymentModule";
 import { Metadata } from "next";
